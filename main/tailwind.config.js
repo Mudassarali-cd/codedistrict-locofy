@@ -10,19 +10,20 @@ module.exports = {
           "100": "#7e8387",
           "200": "rgba(0, 0, 0, 0.87)",
         },
+        gray: {
+          "100": "#7e8387",
+          "200": "rgba(0, 0, 0, 0.87)",
+          "300": "#1b2420",
+        },
         black: "#000",
         mediumaquamarine: "#30b795",
         whitesmoke: "#f8f8f8",
-        mediumaquamarine: "#30b795",
+        lightslategray: "#8f969f",
       },
       spacing: {},
       fontFamily: {
         "mona-sans": "Mona-Sans",
         inter: "Inter",
-        inter: "Inter",
-      },
-      borderRadius: {
-        "4xs-4": "8.4px",
       },
       borderRadius: {
         "4xs-4": "8.4px",
@@ -36,14 +37,10 @@ module.exports = {
       "5xl": "24px",
       "13xl": "32px",
       lgi: "19px",
-      "21xl": "40px",
-      "5xl": "24px",
-      "13xl": "32px",
-      "13xl": "32px",
-      lgi: "19px",
-      "21xl": "40px",
-      "5xl": "24px",
-      "13xl": "32px",
+      "3xl": "22px",
+      "53xl": "72px",
+      "24xl": "43px",
+      "39xl": "58px",
       inherit: "inherit",
     },
     screens: {
@@ -53,6 +50,15 @@ module.exports = {
       mq1350: {
         raw: "screen and (max-width: 1350px)",
       },
+      mq1850: {
+        raw: "screen and (max-width: 1850px)",
+      },
+      mq1700: {
+        raw: "screen and (max-width: 1700px)",
+      },
+      mq1325: {
+        raw: "screen and (max-width: 1325px)",
+      },
       mq975: {
         raw: "screen and (max-width: 975px)",
       },
@@ -61,6 +67,9 @@ module.exports = {
       },
       mq925: {
         raw: "screen and (max-width: 925px)",
+      },
+      mq900: {
+        raw: "screen and (max-width: 900px)",
       },
       mq700: {
         raw: "screen and (max-width: 700px)",
