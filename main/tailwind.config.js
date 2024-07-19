@@ -8,10 +8,15 @@ module.exports = {
         gainsboro: "#ddd",
         gray: "rgba(0, 0, 0, 0.87)",
         black: "#000",
+        mediumaquamarine: "#30b795",
       },
       spacing: {},
       fontFamily: {
         "mona-sans": "Mona-Sans",
+        inter: "Inter",
+      },
+      borderRadius: {
+        "4xs-4": "8.4px",
       },
     },
     fontSize: {
@@ -19,6 +24,9 @@ module.exports = {
       base: "16px",
       "9xl": "28px",
       "3xl": "22px",
+      "21xl": "40px",
+      "5xl": "24px",
+      "13xl": "32px",
       inherit: "inherit",
     },
     screens: {
