@@ -1835,6 +1835,11 @@
   padding-bottom: 70px;
 }
 
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .pb-0 {
   padding-bottom: 0;
 }
@@ -1989,6 +1994,38 @@
 
 .pt-\[6\.1px\] {
   padding-top: 6.1px;
+}
+
+.pb-\[38px\] {
+  padding-bottom: 38px;
+}
+
+.pe-0 {
+  padding-inline-end: 0;
+}
+
+.pe-1\.5 {
+  padding-inline-end: .375rem;
+}
+
+.pe-5 {
+  padding-inline-end: 1.25rem;
+}
+
+.pe-\[11px\] {
+  padding-inline-end: 11px;
+}
+
+.ps-0 {
+  padding-inline-start: 0;
+}
+
+.ps-28 {
+  padding-inline-start: 7rem;
+}
+
+.ps-3 {
+  padding-inline-start: .75rem;
 }
 
 .text-left {
@@ -2261,6 +2298,10 @@
 
 .leading-\[normal\] {
   line-height: normal;
+}
+
+.leading-\[16px\] {
+  line-height: 16px;
 }
 
 .tracking-\[-0\.01em\] {
