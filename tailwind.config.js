@@ -27,6 +27,7 @@ module.exports = {
           "200": "#2c624a",
         },
         aliceblue: "rgba(240, 249, 255, 0.87)",
+        lightgray: "#d6d6d6",
       },
       spacing: {},
       fontFamily: {
@@ -74,6 +75,9 @@ module.exports = {
       mq1650: {
         raw: "screen and (max-width: 1650px)",
       },
+      mq1425: {
+        raw: "screen and (max-width: 1425px)",
+      },
       mq1350: {
         raw: "screen and (max-width: 1350px)",
       },
@@ -94,6 +98,9 @@ module.exports = {
       },
       mq900: {
         raw: "screen and (max-width: 900px)",
+      },
+      mq825: {
+        raw: "screen and (max-width: 825px)",
       },
       mq700: {
         raw: "screen and (max-width: 700px)",
