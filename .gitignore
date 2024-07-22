@@ -1,14 +1,7 @@
-
 # OS generated files
 .DS_Store # macOS folder settings
 Thumbs.db # Windows image file cache
 Desktop.ini # Windows desktop icon settings
-
-# Ignore node_modules directory
-node_modules/
-
-# Ignore package-lock.json file
-package-lock.json
 
 # Editor directories and files
 .vscode/   # Visual Studio Code settings
