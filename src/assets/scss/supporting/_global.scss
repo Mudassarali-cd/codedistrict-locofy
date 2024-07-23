@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("assets/fonts/Mona-Sans-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("assets/fonts/Mona-Sans-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("assets/fonts/Mona-Sans-SemiBold.ttf");
+  font-weight: 600;
+}
+.custom-checkbox {
+  @apply appearance-none bg-transparent border-2 border-solid border-white w-6 h-6 cursor-pointer relative;
+}
+
+.custom-checkbox:checked {
+  @apply border-white; /* Border color when checked */
+}
+
+.custom-checkbox:checked::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%) rotate(45deg);
+  width: 0.4rem;
+  height: 0.75rem;
+  border: solid white; /* Checkmark color */
+  border-width: 0 2px 2px 0;
+}
