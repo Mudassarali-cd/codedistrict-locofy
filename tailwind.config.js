@@ -28,9 +28,13 @@ module.exports = {
           "300": "#005841",
         },
         aliceblue: "rgba(240, 249, 255, 0.87)",
-        lightgray: "#d6d6d6",
+        lightgray: {
+          "100": "#d7d7d7",
+          "200": "#d6d6d6",
+        },
         silver: "#bbbebf",
         "neutral-900": "#111827",
+        darkgray: "rgba(175, 175, 175, 0.5)",
       },
       spacing: {},
       fontFamily: {
@@ -78,6 +82,9 @@ module.exports = {
       mq1650: {
         raw: "screen and (max-width: 1650px)",
       },
+      mq1575: {
+        raw: "screen and (max-width: 1575px)",
+      },
       mq1425: {
         raw: "screen and (max-width: 1425px)",
       },
@@ -90,8 +97,14 @@ module.exports = {
       mq1300: {
         raw: "screen and (max-width: 1300px)",
       },
+      mq1275: {
+        raw: "screen and (max-width: 1275px)",
+      },
       mq1025: {
         raw: "screen and (max-width: 1025px)",
+      },
+      mq1000: {
+        raw: "screen and (max-width: 1000px)",
       },
       mq975: {
         raw: "screen and (max-width: 975px)",
