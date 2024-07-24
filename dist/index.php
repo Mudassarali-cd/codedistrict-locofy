@@ -11,8 +11,211 @@
 </head>
 
 <body>
+
+  <!-- Header Start -->
+
+  <nav class="top-0 text-white z-50 site-header-wrapper">
+    <div class="gap-6 site-header">
+      <!-- Logo -->
+      <a href="#" class="!p-0">
+        <img src="assets/images/cd-logo-white.svg" alt="logo" class="" />
+      </a>
+
+      <!-- Primary Navigation -->
+      <div class="mq1025:hidden flex items-center justify-start gap-12 navigation-menu navigation-menu">
+        <!-- Dropdown Menu -->
+        <div class="dropdown-toggle">
+          <a class="flex items-center gap-2">
+            Services
+            <i class="icon-arrow-down text-[7px] mt-1"></i>
+          </a>
+          <div class="sub-menu-wrapper dropdown-menu">
+            <div class="grid grid-cols-3 gap-4">
+              <div class="grid grid-cols-3 gap-4 col-span-2 px-[85px] py-[84px]">
+                <div class="">
+                  <h4>Consulting</h4>
+                  <a href="#">Digital Transformation</a>
+                  <a href="#">Discovery Workshop</a>
+                  <a href="#">Technical Feasibility</a>
+                  <a href="#">User Experience & Design</a>
+                </div>
+                <div class="">
+                  <h4>Engineering</h4>
+                  <a href="#">PoC Development</a>
+                  <a href="#">Application Development</a>
+                  <a href="#">Product Development</a>
+                  <a href="#">Application Modernization</a>
+                  <a href="#">Software Development</a>
+                  <a href="#">Cloud Migration</a>
+                  <a href="#">Cloud Engineering</a>
+                </div>
+                <div class="">
+                  <h4>Expertise</h4>
+                  <a href="#">UX Design</a>
+                  <a href="#">Internet of Things</a>
+                  <a href="#">DevOps</a>
+                  <a href="#">Business Process Automation</a>
+                  <a href="#">System Integrators</a>
+                </div>
+                <div class="mt-8">
+                  <h4>Artificial Intelligence</h4>
+                  <a href="#">Quality Assurance & Testing</a>
+                  <a href="#">Software Audit</a>
+                  <a href="#">Support & Maintenance</a>
+                </div>
+                <div class="mt-8">
+                  <h4>Solutions</h4>
+                  <a href="#">Salesforce</a>
+                  <a href="#">Services for startups</a>
+                  <a href="#">Support & Maintenance</a>
+                </div>
+                <div class="mt-8">
+                  <h4>Optimization</h4>
+                  <a href="#">Quality Assurance & Testing</a>
+                </div>
+              </div>
+              <div class="sub-menu-links-right-col">
+                <h4>Partnership Models</h4>
+                <a class="pbd-link">Project-based Delivery <i class="icon-external-link"></i></a>
+                <a class="dt-link">Dedicated Team <i class="icon-external-link"></i></a>
+
+
+                <h4 class="!mt-8">By Role</h4>
+                <a class="br-link">CEO <i class="icon-external-link"></i></a>
+                <a class="br-link">CTO <i class="icon-external-link"></i></a>
+                <a class="br-link">COO <i class="icon-external-link"></i></a>
+                <a class="br-link">Product Manager <i class="icon-external-link"></i></a>
+                <a class="br-link">CIO <i class="icon-external-link"></i></a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <a href="#" class="py-2 px-3 block">Case Studies</a>
+        <a href="#" class="py-2 px-3 block">Blog</a>
+        <a href="#" class="py-2 px-3 block">Careers</a>
+        <a href="#" class="py-2 px-3 block">Company</a>
+      </div>
+      <div class="menu-right-wrapper">
+        <!-- Mobile Menu Button -->
+        <div class="mq1025:flex hidden items-center">
+          <button class="mobile-menu-button">
+            <img src="assets/images/hamburger.svg" alt="hamburger" />
+          </button>
+        </div>
+        <!-- <a href="#" class="btn-for-startups">For Startups</a> -->
+        <Button href="#" class="btn-contactus">CONTACT US</Button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header End -->
+
+  <!--  Section Hero Start -->
+
+  <section class="outter hero-video">
+    <div class="tabs-content">
+      <div class="video-container" id="tabs-1">
+        <video poster="assets/images/hero/poster.jpg" src="assets/videos/hero/nielson.mp4" autoplay loop playsinline muted></video>
+        <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+          <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
+            Building software products beyond expectations 122344
+          </h1>
+          <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+            Lets Discuss your Project
+            <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="video-container" id="tabs-2">
+        <video src="assets/videos/hero/astra-zenecca.mp4" autoplay loop playsinline muted></video>
+        <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+          <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
+            Building software products beyond expectations
+          </h1>
+          <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+            Lets Discuss your Project
+            <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="video-container" id="tabs-3">
+        <video src="assets/videos/hero/carribean-airlines.mp4" autoplay loop playsinline muted></video>
+        <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+          <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
+            Building software products beyond expectations
+          </h1>
+          <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+            Lets Discuss your Project
+            <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="video-container" id="tabs-4">
+        <video src="assets/videos/hero/swatFame.mp4" autoplay loop playsinline muted></video>
+        <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+          <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
+            Building software products beyond expectations
+          </h1>
+          <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+            Lets Discuss your Project
+            <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+          </a>
+        </div>
+      </div>
+      <div class="video-container" id="tabs-5">
+        <video src="assets/videos/hero/limbik.mp4" autoplay loop playsinline muted></video>
+        <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+          <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
+            Building software products beyond expectations
+          </h1>
+          <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+            Lets Discuss your Project
+            <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-items-wrapper grid grid-cols-5 mq725:grid-cols-1 gap-4 absolute z-10 bottom-0">
+      <div class="tabs-item" data-target="#tabs-1">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <img class="max-w-full" loading="lazy" alt="" src="assets/images/hero/nielsen-logo.svg" />
+      </div>
+      <div class="tabs-item" data-target="#tabs-2">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <img class="max-w-full" loading="lazy" alt="" src="assets/images/hero/astra-zeneca-logo.svg" />
+      </div>
+      <div class="tabs-item" data-target="#tabs-3">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <img class="max-w-full" alt="" src="assets/images/hero/caribbean-airlines-logo.svg" />
+      </div>
+      <div class="tabs-item" data-target="#tabs-4">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <img class="max-w-full" alt="" src="assets/images/hero/swatfame-logo.svg" />
+      </div>
+      <div class="tabs-item" data-target="#tabs-5">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <img class="max-w-full" alt="" src="assets/images/hero/limbik.svg" />
+      </div>
+    </div>
+  </section>
+
+  <!--  Section Hero End -->
+
+
+
   <!-- Section Services Cards Start -->
-  <?php include './inc/hero.php' ?>
+
   <section class="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start pt-[42px] pb-14 pr-0 pl-28 box-border gap-[61px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-mona-sans mq700:gap-[15px] mq700:pl-7 mq700:box-border mq975:gap-[30px] mq975:pl-14 mq975:box-border">
     <h1 class="m-0 w-[1704px] relative text-inherit tracking-[-0.01em] font-semibold font-inherit flex items-center max-w-full mq450:text-[24px] mq950:text-[32px]">
       How we impact your business?
@@ -20,7 +223,7 @@
     <div class="w-[1808px] overflow-x-auto flex flex-row items-start justify-start gap-[24px] max-w-full text-left text-9xl text-black font-mona-sans">
       <div class="max-w-full w-[456px] shrink-0 rounded-xl bg-white pt-[30px] px-[31px] pb-[15px] border-[1px] border-solid border-gainsboro mq450:pt-5 mq450:pb-5 mq450:box-border">
         <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mb-12 mq450:mb-[24px]">
-          <div id="engineering" class="w-[103px] h-16"></div>
+          <div id="engineering" class="min-w-[103px] min-h-16"></div>
           <img class="h-[15.8px] w-[15.8px] relative" loading="lazy" alt="" src="assets/images/vector.svg" />
         </div>
         <h3 class="mt-0 mb-[2px] font-medium mq450:text-3xl leading-[42px] mq450:leading-[34px] text-inherit">

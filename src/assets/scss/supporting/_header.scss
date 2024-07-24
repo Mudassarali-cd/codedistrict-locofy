@@ -1,0 +1,109 @@
+// header style 
+
+.site-header-wrapper {
+    @apply mq1025:py-[15px] px-[17px] w-full box-border fixed top-0 bg-transparent z-50;
+}
+
+.mobile-menu-button {
+    @apply border-none bg-transparent p-0;
+}
+
+.site-header {
+    @apply flex justify-between items-center;
+
+    a {
+        @apply font-mona-sans cursor-pointer text-white py-7 no-underline text-base font-medium;
+    }
+}
+
+.btn-contactus {
+    @apply py-2 px-5 rounded-lg bg-transparent text-white;
+    border: 1px solid #30B795;
+    font-size: 14px;
+
+    &:hover {
+        @apply cursor-pointer bg-white border border-white text-black;
+    }
+}
+
+.btn-for-startups {
+    @apply text-[#30B795];
+}
+
+.menu-right-wrapper {
+    @apply flex items-center justify-between mq700:gap-4 gap-6;
+}
+
+.sub-menu-wrapper {
+    @apply opacity-0 invisible mt-0.5 transition-all duration-200 h-0 z-0;
+}
+
+.dropdown-toggle:hover .sub-menu-wrapper {
+    @apply opacity-100 visible mt-0 h-auto z-10;
+}
+
+
+
+.sub-menu-wrapper {
+    @apply bg-[#F7F7F7] w-full absolute left-0 top-[75px] shadow-md box-border;
+
+    &::before {
+        @apply block w-full top-0 left-0 h-[7px] z-[2] opacity-[0.1] absolute;
+        content: "";
+        background: linear-gradient(180deg, rgba(0, 0, 0, .65) 0, transparent);
+    }
+
+    a {
+        @apply font-mona-sans text-black text-base block py-2 font-semibold;
+
+        &:hover {
+            @apply text-[#30B795];
+        }
+    }
+}
+
+.sub-menu-wrapper {
+    @apply max-h-[500px] overflow-y-auto;
+
+    h4 {
+        @apply font-mona-sans text-black text-5xl mb-5 mt-0 font-semibold;
+
+    }
+
+    .sub-menu-links-right-col {
+        @apply px-[85px] py-[84px];
+        border-left: 1px solid #30B795;
+    }
+
+    .pbd-link,
+    .dt-link {
+        @apply flex justify-between py-5 px-[26px] rounded-lg text-[18px];
+
+    }
+
+    .pbd-link {
+        @apply text-[#927EB4] mb-2;
+        background: linear-gradient(90deg, #F7F2FF 0%, #EDE7FF 100%);
+
+        &:hover {
+            @apply text-[#bda1ed];
+        }
+    }
+
+    .dt-link {
+        @apply text-[#30B795];
+        background: linear-gradient(90deg, #F3FFFC 0%, #DCFFF6 100%);
+
+        &:hover {
+            @apply text-[#4df2c9];
+        }
+    }
+
+    .br-link {
+        @apply flex justify-between px-[13px] py-[8px] mb-2 rounded-lg bg-white text-[#005841];
+
+        i {
+            @apply text-[12px] text-black;
+        }
+    }
+}

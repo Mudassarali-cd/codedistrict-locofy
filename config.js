@@ -33,6 +33,7 @@ const folders = [
   "assets/fonts",
   "assets/favicon",
   "assets/lottieIcons",
+  "assets/fontIcons",
 ];
 
 const paths = {

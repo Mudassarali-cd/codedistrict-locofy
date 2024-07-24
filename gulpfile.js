@@ -65,8 +65,8 @@ function devStyles() {
 
 function devScripts() {
   return src([
-    // `${options.paths.src.assetsJs}/jquery-plugins/jquery.min.js`, // Include jQuery file
-    // `${options.paths.src.assetsJs}/jquery-plugins/jquery.validate.min.js`, // Include jQuery validate file
+    `${options.paths.src.assetsJs}/jquery-plugins/jquery.min.js`, // Include jQuery file
+    `${options.paths.src.assetsJs}/jquery-plugins/lottie.min.js`, // Include lottie icons animation file
     // `${options.paths.src.assetsJs}/jquery-plugins/image-comparison-slider.min.js`, // Include jQuery any image comparison slider file
     // `${options.paths.src.assetsJs}/jquery-plugins/swiper-bundle.min.js`, // Include jQuery swiper slider file
     // `${options.paths.src.assetsJs}/jquery-plugins/gsap.js`, // Include jQuery gsap file
@@ -85,6 +85,11 @@ function devImages() {
 function devLottieIcons() {
   return src(`${options.paths.src.assetsLottieIcons}/**/*`).pipe(
     dest(options.paths.dist.assetsLottieIcons)
+  );
+}
+function devFontIcons() {
+  return src(`${options.paths.src.assetsFontIcons}/**/*`).pipe(
+    dest(options.paths.dist.assetsFontIcons)
   );
 }
 
@@ -131,6 +136,10 @@ function watchFiles() {
   watch(
     `${options.paths.src.assetsLottieIcons}/**/*`,
     series(devLottieIcons, previewReload)
+  );
+  watch(
+    `${options.paths.src.assetsFontIcons}/**/*`,
+    series(devFontIcons, previewReload)
   );
   watch(
     `${options.paths.src.assetsVideos}/**/*`,
@@ -246,6 +255,7 @@ exports.default = series(
     devScripts,
     devImages,
     devLottieIcons,
+    devFontIcons,
     devVideos,
     devFonts,
     devHTML,
