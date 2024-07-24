@@ -47,7 +47,7 @@ function previewReload(done) {
 
 //Development Tasks
 function devHTML() {
-  return src(`${options.paths.src.base}/**/*.php`)
+  return src([`${options.paths.src.base}/**/*.php`, `${options.paths.src.base}/**/*.php`])
     .pipe(includePartials())
     .pipe(dest(options.paths.dist.base))
     .pipe(browserSync.stream()); // Reloads browsersync
@@ -88,9 +88,9 @@ function devLottieIcons() {
   );
 }
 
-function devVideo() {
-  return src(`${options.paths.src.assetsVideo}/**/*`).pipe(
-    dest(options.paths.dist.assetsVideo)
+function devVideos() {
+  return src(`${options.paths.src.assetsVideos}/**/*`).pipe(
+    dest(options.paths.dist.assetsVideos)
   );
 }
 
@@ -133,8 +133,8 @@ function watchFiles() {
     series(devLottieIcons, previewReload)
   );
   watch(
-    `${options.paths.src.assetsVideo}/**/*`,
-    series(devVideo, previewReload)
+    `${options.paths.src.assetsVideos}/**/*`,
+    series(devVideos, previewReload)
   );
   watch(
     `${options.paths.src.assetsFonts}/**/*`,
@@ -246,7 +246,7 @@ exports.default = series(
     devScripts,
     devImages,
     devLottieIcons,
-    devVideo,
+    devVideos,
     devFonts,
     devHTML,
     devFavicon,

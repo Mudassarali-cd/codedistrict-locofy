@@ -12,6 +12,7 @@
 
 <body>
   <!-- Section Services Cards Start -->
+  <?php include './inc/hero.php' ?>
   <section class="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start pt-[42px] pb-14 pr-0 pl-28 box-border gap-[61px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-mona-sans mq700:gap-[15px] mq700:pl-7 mq700:box-border mq975:gap-[30px] mq975:pl-14 mq975:box-border">
     <h1 class="m-0 w-[1704px] relative text-inherit tracking-[-0.01em] font-semibold font-inherit flex items-center max-w-full mq450:text-[24px] mq950:text-[32px]">
       How we impact your business?
