@@ -10,7 +10,7 @@
     "autoprefixer": "^10.4.13",
     "browser-sync": "^2.27.10",
     "cssnano": "^5.1.15",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
@@ -41,5 +41,8 @@
     "sass"
   ],
   "author": "Boilerplate - Tailwind with GulpJs",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cli": "^3.0.0"
+  }
 }
