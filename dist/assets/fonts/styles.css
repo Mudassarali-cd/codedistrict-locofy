@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("Mona-Sans-Light.eot");
+  src: url("Mona-Sans-Light.eot?#iefix") format("embedded-opentype"),
+    url("Mona-Sans-Light.woff2") format("woff2"),
+    url("Mona-Sans-Light.woff") format("woff"),
+    url("Mona-Sans-Light.ttf") format("truetype"),
+    url("Mona-Sans-Light.svg#Mona-Sans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("Mona-Sans-Bold.eot");
+  src: url("Mona-Sans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Mona-Sans-Bold.woff2") format("woff2"),
+    url("Mona-Sans-Bold.woff") format("woff"),
+    url("Mona-Sans-Bold.ttf") format("truetype"),
+    url("Mona-Sans-Bold.svg#Mona-Sans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("Mona-Sans-SemiBold.eot");
+  src: url("Mona-Sans-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("Mona-Sans-SemiBold.woff2") format("woff2"),
+    url("Mona-Sans-SemiBold.woff") format("woff"),
+    url("Mona-Sans-SemiBold.ttf") format("truetype"),
+    url("Mona-Sans-SemiBold.svg#Mona-Sans-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona-Sans";
+  src: url("Mona-Sans-Medium.eot");
+  src: url("Mona-Sans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("Mona-Sans-Medium.woff2") format("woff2"),
+    url("Mona-Sans-Medium.woff") format("woff"),
+    url("Mona-Sans-Medium.ttf") format("truetype"),
+    url("Mona-Sans-Medium.svg#Mona-Sans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}

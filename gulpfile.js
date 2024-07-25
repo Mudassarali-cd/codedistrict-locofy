@@ -20,10 +20,10 @@ const sass = require("gulp-sass")(require("sass")); //For Compiling SASS files
 const postcss = require("gulp-postcss"); //For Compiling tailwind utilities with tailwind config
 const concat = require("gulp-concat"); //For Concatinating js,css files
 const uglify = require("gulp-terser"); //To Minify JS files
-const imagemin = require("gulp-imagemin"); //To Optimize Images
-const mozjpeg = require("imagemin-mozjpeg"); // imagemin plugin
-const pngquant = require("imagemin-pngquant"); // imagemin plugin
-const purgecss = require("gulp-purgecss"); // Remove Unused CSS from Styles
+// const imagemin = require("gulp-imagemin"); //To Optimize Images
+// const mozjpeg = require("imagemin-mozjpeg"); // imagemin plugin
+// const pngquant = require("imagemin-pngquant"); // imagemin plugin
+// const purgecss = require("gulp-purgecss"); // Remove Unused CSS from Styles
 const logSymbols = require("log-symbols"); //For Symbolic Console logs :) :P
 const includePartials = require("gulp-file-include"); //For supporting partials if required
 
@@ -47,7 +47,7 @@ function previewReload(done) {
 
 //Development Tasks
 function devHTML() {
-  return src([`${options.paths.src.base}/**/*.php`, `${options.paths.src.base}/**/*.php`])
+  return src(`${options.paths.src.base}/**/*[.html, .php]`)
     .pipe(includePartials())
     .pipe(dest(options.paths.dist.base))
     .pipe(browserSync.stream()); // Reloads browsersync
@@ -181,19 +181,17 @@ function prodStyles() {
   const tailwindcss = require("tailwindcss");
   const autoprefixer = require("autoprefixer");
   const cssnano = require("cssnano");
-  return (
-    src(`${options.paths.src.assetsScss}/**/*.scss`)
-      .pipe(sass().on("error", sass.logError))
-      .pipe(
-        postcss([
-          tailwindcss(options.config.tailwindjs),
-          autoprefixer(),
-          cssnano(),
-        ])
-      )
+  return src(`${options.paths.src.assetsScss}/**/*.scss`)
+    .pipe(sass().on("error", sass.logError))
+    .pipe(
+      postcss([
+        tailwindcss(options.config.tailwindjs),
+        autoprefixer(),
+        cssnano(),
+      ])
+    )
 
-      .pipe(dest(options.paths.build.assetsScss))
-  );
+    .pipe(dest(options.paths.build.assetsScss));
 }
 
 function prodScripts() {
@@ -206,29 +204,28 @@ function prodScripts() {
     .pipe(dest(options.paths.build.assetsJs));
 }
 
-function prodImages() {
-  const pngQuality = Array.isArray(options.config.imagemin.png)
-    ? options.config.imagemin.png
-    : [0.7, 0.7];
-  const jpgQuality = Number.isInteger(options.config.imagemin.jpeg)
-    ? options.config.imagemin.jpeg
-    : 70;
-  const plugins = [
-    pngquant({ quality: pngQuality }),
-    mozjpeg({ quality: jpgQuality }),
-  ];
+// function prodImages() {
+//   const pngQuality = Array.isArray(options.config.imagemin.png)
+//     ? options.config.imagemin.png
+//     : [0.7, 0.7];
+//   const jpgQuality = Number.isInteger(options.config.imagemin.jpeg)
+//     ? options.config.imagemin.jpeg
+//     : 70;
+//   const plugins = [
+//     pngquant({ quality: pngQuality }),
+//     mozjpeg({ quality: jpgQuality }),
+//   ];
 
-  return src(options.paths.src.assetsImages + "/**/*")
-    .pipe(imagemin([...plugins]))
-    .pipe(dest(options.paths.build.assetsImages));
-}
+//   return src(options.paths.src.assetsImages + "/**/*")
+//     .pipe(imagemin([...plugins]))
+//     .pipe(dest(options.paths.build.assetsImages));
+// }
 
 function prodFonts() {
   return src(`${options.paths.src.assetsFonts}/**/*`).pipe(
     dest(options.paths.build.assetsFonts)
   );
 }
-
 
 function prodClean() {
   console.log(
@@ -259,7 +256,7 @@ exports.default = series(
     devVideos,
     devFonts,
     devHTML,
-    devFavicon,
+    devFavicon
   ), //Run All tasks in parallel
   livePreview, // Live Preview Build
   watchFiles // Watch for Live Changes
@@ -270,7 +267,7 @@ exports.prod = series(
   parallel(
     prodStyles,
     prodScripts,
-    prodImages,
+    // prodImages,
     prodHTML,
     prodFonts
     // prodThirdParty

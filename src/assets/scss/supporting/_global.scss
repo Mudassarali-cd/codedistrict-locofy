@@ -2,32 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply leading-[normal] m-0;
+  font-family: "Mona-Sans";
+  @apply m-0 leading-[normal];
 }
 *,
 ::before,
 ::after {
   border-width: 0;
 }
-@font-face {
-  font-family: "Mona-Sans";
-  src: url("assets/fonts/Mona-Sans-Light.ttf");
-  font-weight: 300;
+.page-section {
+  @apply pb-14 pt-14;
+  h2 {
+    @apply mb-[61px] mt-0 text-21xl font-semibold tracking-[-1.4px] mq950:text-13xl mq450:text-5xl mq450:leading-[55px];
+  }
 }
-
-@font-face {
-  font-family: "Mona-Sans";
-  src: url("assets/fonts/Mona-Sans-Medium.woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Mona-Sans";
-  src: url("assets/fonts/Mona-Sans-SemiBold.ttf");
-  font-weight: 600;
+.thm-container {
+  @apply mx-auto my-0 w-[88.5%] max-w-[1700px] pl-0 pr-0;
 }
 .custom-checkbox {
-  @apply appearance-none bg-transparent border-2 border-solid border-white w-6 h-6 cursor-pointer relative;
+  @apply relative h-6 w-6 cursor-pointer appearance-none border-2 border-solid border-white bg-transparent;
 }
 
 .custom-checkbox:checked {
@@ -35,13 +28,37 @@ body {
 }
 
 .custom-checkbox:checked::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-40%, -50%) rotate(45deg);
   width: 0.4rem;
   height: 0.75rem;
-  border: solid white; /* Checkmark color */
+  border: solid white;
   border-width: 0 2px 2px 0;
+}
+
+.case-study-section {
+  .apect-ratio-thumb {
+    @apply relative w-full;
+    &:before {
+      content: "";
+      @apply block pt-[58%];
+    }
+    .case-study-thumb {
+      @apply absolute top-0 h-full w-full object-cover;
+    }
+  }
+}
+
+.client-img {
+  @apply relative w-[664px];
+  &:before {
+    content: "";
+    @apply block pt-[56%];
+  }
+  img {
+    @apply absolute top-0 h-full w-full object-cover;
+  }
 }
