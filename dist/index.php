@@ -15,7 +15,7 @@
     <!-- Header Start -->
 
     <nav class="top-0 text-white z-50 site-header-wrapper" id="site-header">
-        <div class="gap-6 site-header">
+        <div class="mq1425:gap-4 gap-6 site-header thm-container">
             <!-- Logo -->
             <a href="#" class="!p-0">
                 <img src="assets/images/cd-logo-white.svg" alt="logo" class="logo-white" />
@@ -23,91 +23,98 @@
             </a>
 
             <!-- Primary Navigation -->
-            <div class="mq1025:hidden flex items-center justify-start gap-12 navigation-menu navigation-menu">
-                <!-- Dropdown Menu -->
-                <div class="dropdown-toggle">
-                    <a class="flex items-center gap-2">
-                        Services
-                        <i class="icon-arrow-down text-[7px] mt-1"></i>
-                    </a>
-                    <div class="sub-menu-wrapper dropdown-menu">
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="grid grid-cols-3 gap-4 col-span-2 px-[85px] py-[84px]">
-                                <div class="">
-                                    <h4>Consulting</h4>
-                                    <a href="#">Digital Transformation</a>
-                                    <a href="#">Discovery Workshop</a>
-                                    <a href="#">Technical Feasibility</a>
-                                    <a href="#">User Experience & Design</a>
-                                </div>
-                                <div class="">
-                                    <h4>Engineering</h4>
-                                    <a href="#">PoC Development</a>
-                                    <a href="#">Application Development</a>
-                                    <a href="#">Product Development</a>
-                                    <a href="#">Application Modernization</a>
-                                    <a href="#">Software Development</a>
-                                    <a href="#">Cloud Migration</a>
-                                    <a href="#">Cloud Engineering</a>
-                                </div>
-                                <div class="">
-                                    <h4>Expertise</h4>
-                                    <a href="#">UX Design</a>
-                                    <a href="#">Internet of Things</a>
-                                    <a href="#">DevOps</a>
-                                    <a href="#">Business Process Automation</a>
-                                    <a href="#">System Integrators</a>
-                                </div>
-                                <div class="mt-8">
-                                    <h4>Artificial Intelligence</h4>
-                                    <a href="#">Quality Assurance & Testing</a>
-                                    <a href="#">Software Audit</a>
-                                    <a href="#">Support & Maintenance</a>
-                                </div>
-                                <div class="mt-8">
-                                    <h4>Solutions</h4>
-                                    <a href="#">Salesforce</a>
-                                    <a href="#">Services for startups</a>
-                                    <a href="#">Support & Maintenance</a>
-                                </div>
-                                <div class="mt-8">
-                                    <h4>Optimization</h4>
-                                    <a href="#">Quality Assurance & Testing</a>
-                                </div>
-                            </div>
-                            <div class="sub-menu-links-right-col">
-                                <h4>Partnership Models</h4>
-                                <a class="pbd-link">Project-based Delivery <i class="icon-external-link"></i></a>
-                                <a class="dt-link">Dedicated Team <i class="icon-external-link"></i></a>
-
-
-                                <h4 class="!mt-8">By Role</h4>
-                                <a class="br-link">CEO <i class="icon-external-link"></i></a>
-                                <a class="br-link">CTO <i class="icon-external-link"></i></a>
-                                <a class="br-link">COO <i class="icon-external-link"></i></a>
-                                <a class="br-link">Product Manager <i class="icon-external-link"></i></a>
-                                <a class="br-link">CIO <i class="icon-external-link"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
+            <div class="mq1025:hidden navigation-menu">
+                <div class="mobile-nav-header mq1025:flex hidden">
+                    <img src="assets/images/cd-logo-black.svg" alt="logo" />
+                    <i class="icon-close  cursor-pointer"> </i>
                 </div>
-                <a href="#" class="py-2 px-3 block">Case Studies</a>
-                <a href="#" class="py-2 px-3 block">Blog</a>
-                <a href="#" class="py-2 px-3 block">Careers</a>
-                <a href="#" class="py-2 px-3 block">Company</a>
+                <!-- Dropdown Menu -->
+
+                <div class="flex mq1025:flex-col items-center justify-start mq1025:gap-0 mq1425:gap-8 gap-12 menu-wrapper">
+                    <div class="dropdown-toggle">
+                        <a class="flex items-center gap-2 leading-none">
+                            Services
+                            <i class="icon-arrow-down text-[7px] mt-1"></i>
+                        </a>
+                        <div class="sub-menu-wrapper dropdown-menu">
+                            <div class="grid mq1025:grid-cols-1 mq1025:gap-0 grid-cols-3 gap-4 mq1025:w-full thm-container">
+                                <div class="grid mq1025:grid-cols-1 mq1025:col-span-1 grid-cols-3 mq1025:gap-6 col-span-2 mq1025:px-0 mq1025:py-0 gap-4 py-[3.5rem]">
+                                    <div class="">
+                                        <h4>Consulting</h4>
+                                        <a href="#">Digital Transformation</a>
+                                        <a href="#">Discovery Workshop</a>
+                                        <a href="#">Technical Feasibility</a>
+                                        <a href="#">User Experience & Design</a>
+                                    </div>
+                                    <div class="">
+                                        <h4>Engineering</h4>
+                                        <a href="#">PoC Development</a>
+                                        <a href="#">Application Development</a>
+                                        <a href="#">Product Development</a>
+                                        <a href="#">Application Modernization</a>
+                                        <a href="#">Software Development</a>
+                                        <a href="#">Cloud Migration</a>
+                                        <a href="#">Cloud Engineering</a>
+                                    </div>
+                                    <div class="">
+                                        <h4>Expertise</h4>
+                                        <a href="#">UX Design</a>
+                                        <a href="#">Internet of Things</a>
+                                        <a href="#">DevOps</a>
+                                        <a href="#">Business Process Automation</a>
+                                        <a href="#">System Integrators</a>
+                                    </div>
+                                    <div class="mq1025:mt-0 mt-8">
+                                        <h4>Artificial Intelligence</h4>
+                                        <a href="#">Quality Assurance & Testing</a>
+                                        <a href="#">Software Audit</a>
+                                        <a href="#">Support & Maintenance</a>
+                                    </div>
+                                    <div class="mq1025:mt-0 mt-8">
+                                        <h4>Solutions</h4>
+                                        <a href="#">Salesforce</a>
+                                        <a href="#">Services for startups</a>
+                                        <a href="#">Support & Maintenance</a>
+                                    </div>
+                                    <div class="mq1025:mt-0 mt-8">
+                                        <h4>Optimization</h4>
+                                        <a href="#">Quality Assurance & Testing</a>
+                                    </div>
+                                </div>
+                                <div class="sub-menu-links-right-col">
+                                    <h4 class="mq1025:!mt-8">Partnership Models</h4>
+                                    <a class="pbd-link">Project-based Delivery <i class="icon-external-link"></i></a>
+                                    <a class="dt-link">Dedicated Team <i class="icon-external-link"></i></a>
+
+
+                                    <h4 class="!mt-8">By Role</h4>
+                                    <a class="br-link">CEO <i class="icon-external-link"></i></a>
+                                    <a class="br-link">CTO <i class="icon-external-link"></i></a>
+                                    <a class="br-link">COO <i class="icon-external-link"></i></a>
+                                    <a class="br-link">Product Manager <i class="icon-external-link"></i></a>
+                                    <a class="br-link">CIO <i class="icon-external-link"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="py-2 px-3 block">Case Studies</a>
+                    <a href="#" class="py-2 px-3 block">Blog</a>
+                    <a href="#" class="py-2 px-3 block">Careers</a>
+                    <a href="#" class="py-2 px-3 block">Company</a>
+                </div>
             </div>
             <div class="menu-right-wrapper">
-                <!-- Mobile Menu Button -->
-                <div class="mq1025:flex hidden items-center">
-                    <button class="mobile-menu-button">
-                        <img src="assets/images/hamburger.svg" alt="hamburger" />
-                    </button>
-                </div>
                 <!-- <a href="#" class="btn-for-startups">For Startups</a> -->
                 <Button href="#" class="btn-contactus">CONTACT US</Button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button cursor-pointer" id="mobileMenu">
+                    <i class="icon-menu"></i>
+                </button>
             </div>
         </div>
+        <div class="mob-nav-bg mq1025:block hidden"></div>
     </nav>
 
     <!-- Header End -->
@@ -116,63 +123,63 @@
 
     <section class="outter hero-video">
         <div class="tabs-content">
-            <div class="video-container" id="tabs-1">
-                <video poster="assets/images/hero/poster.jpg" src="assets/videos/hero/nielson.mp4" autoplay loop playsinline muted></video>
-                <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
-                    <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
-                        Building software products beyond expectations 122344
-                    </h1>
-                    <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
-                        Lets Discuss your Project
-                        <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
-                    </a>
-                </div>
-            </div>
-            <div class="video-container" id="tabs-2">
-                <video src="assets/videos/hero/astra-zenecca.mp4" autoplay loop playsinline muted></video>
-                <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+            <div class="video-container active" id="tabs-1">
+                <video poster="assets/images/hero/nielson.jpg" src="assets/videos/hero/nielson.mp4" autoplay loop playsinline muted></video>
+                <div class="video-content-wrapper w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
                     <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
                         Building software products beyond expectations
                     </h1>
-                    <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+                    <a class="cursor-pointer py-[1.125rem] px-[2.5rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg flex items-start justify-start gap-[1.5rem] z-[3] mq725:py-[1rem] mq725:px-[1rem] tracking-[-0.15px] uppercase font-semibold text-black text-[1rem] font-mona-sans">
                         Lets Discuss your Project
-                        <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+                        <i class="icon-external-link"></i>
                     </a>
                 </div>
             </div>
-            <div class="video-container" id="tabs-3">
-                <video src="assets/videos/hero/carribean-airlines.mp4" autoplay loop playsinline muted></video>
-                <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+            <div class="video-container hidden" id="tabs-2">
+                <video poster="assets/images/hero/astra-zenecca.jpg" src="assets/videos/hero/astra-zenecca.mp4" autoplay loop playsinline muted></video>
+                <div class="video-content-wrapper w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
                     <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
                         Building software products beyond expectations
                     </h1>
-                    <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+                    <a class="cursor-pointer py-[1.125rem] px-[2.5rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg flex items-start justify-start gap-[1.5rem] z-[3] mq725:py-[1rem] mq725:px-[1rem] tracking-[-0.15px] uppercase font-semibold text-black text-[1rem] font-mona-sans">
                         Lets Discuss your Project
-                        <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+                        <i class="icon-external-link"></i>
                     </a>
                 </div>
             </div>
-            <div class="video-container" id="tabs-4">
-                <video src="assets/videos/hero/swatFame.mp4" autoplay loop playsinline muted></video>
-                <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+            <div class="video-container hidden" id="tabs-3">
+                <video poster="assets/images/hero/carribean-airlines.jpg" src="assets/videos/hero/carribean-airlines.mp4" autoplay loop playsinline muted></video>
+                <div class="video-content-wrapper w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
                     <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
                         Building software products beyond expectations
                     </h1>
-                    <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+                    <a class="cursor-pointer py-[1.125rem] px-[2.5rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg flex items-start justify-start gap-[1.5rem] z-[3] mq725:py-[1rem] mq725:px-[1rem] tracking-[-0.15px] uppercase font-semibold text-black text-[1rem] font-mona-sans">
                         Lets Discuss your Project
-                        <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+                        <i class="icon-external-link"></i>
                     </a>
                 </div>
             </div>
-            <div class="video-container" id="tabs-5">
-                <video src="assets/videos/hero/limbik.mp4" autoplay loop playsinline muted></video>
-                <div class="callout w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+            <div class="video-container hidden" id="tabs-4">
+                <video poster="assets/images/hero/swatfame.jpg" src="assets/videos/hero/swatFame.mp4" autoplay loop playsinline muted></video>
+                <div class="video-content-wrapper w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
                     <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
                         Building software products beyond expectations
                     </h1>
-                    <a class="cursor-pointer [border:none] py-[1.625rem] px-[2.75rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg  flex items-start justify-start gap-[1.5rem] z-[3] pt-[1.625rem] mq725:py-[1rem] mq725:px-[1rem] box-border tracking-[-0.15px] leading-[1.313rem] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+                    <a class="cursor-pointer py-[1.125rem] px-[2.5rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg flex items-start justify-start gap-[1.5rem] z-[3] mq725:py-[1rem] mq725:px-[1rem] tracking-[-0.15px] uppercase font-semibold text-black text-[1rem] font-mona-sans">
                         Lets Discuss your Project
-                        <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/vector.svg" />
+                        <i class="icon-external-link"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="video-container hidden" id="tabs-5">
+                <video poster="assets/images/hero/limbik.jpg" src="assets/videos/hero/limbik.mp4" autoplay loop playsinline muted></video>
+                <div class="video-content-wrapper w-[62.125rem] flex flex-col items-start justify-start gap-[3.75rem] max-w-full mq1000:gap-[1.875rem]">
+                    <h1 class="m-0 tracking-[-2.2px] leading-[5rem] font-semibold font-mona-sans z-[3] mq450:text-[2.688rem] mq450:leading-[3rem] mq975:text-[3.625rem] mq975:leading-[4rem] text-[4.5rem]">
+                        Building software products beyond expectations
+                    </h1>
+                    <a class="cursor-pointer py-[1.125rem] px-[2.5rem] bg-mediumaquamarine shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] rounded-lg flex items-start justify-start gap-[1.5rem] z-[3] mq725:py-[1rem] mq725:px-[1rem] tracking-[-0.15px] uppercase font-semibold text-black text-[1rem] font-mona-sans">
+                        Lets Discuss your Project
+                        <i class="icon-external-link"></i>
                     </a>
                 </div>
             </div>
@@ -214,131 +221,114 @@
     <!--  Section Hero End -->
 
 
-
     <!-- Section Services Cards Start -->
-
-    <section class="relative bg-white w-full overflow-hidden flex flex-col items-start justify-start pt-[42px] pb-14 pr-0 pl-28 box-border gap-[61px] leading-[normal] tracking-[normal] text-left text-[40px] text-black font-mona-sans mq700:gap-[15px] mq700:pl-7 mq700:box-border mq975:gap-[30px] mq975:pl-14 mq975:box-border">
-        <h1 class="m-0 w-[1704px] relative text-inherit tracking-[-0.01em] font-semibold font-inherit flex items-center max-w-full mq450:text-[24px] mq950:text-[32px]">
-            How we impact your business?
-        </h1>
-        <div class="w-[1808px] overflow-x-auto flex flex-row items-start justify-start gap-[24px] max-w-full text-left text-9xl text-black font-mona-sans">
-            <div class="max-w-full w-[456px] shrink-0 rounded-xl bg-white pt-[30px] px-[31px] pb-[15px] border-[1px] border-solid border-gainsboro mq450:pt-5 mq450:pb-5 mq450:box-border">
-                <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mb-12 mq450:mb-[24px]">
-                    <div id="engineering" class="min-w-[103px] min-h-16"></div>
-                    <img class="h-[15.8px] w-[15.8px] relative" loading="lazy" alt="" src="assets/images/vector.svg" />
+    <section class="page-section relative overflow-hidden bg-white pb-14 pe-0 pt-[42px] font-mona-sans">
+        <div class="thm-container">
+            <h2>How we impact your business?</h2>
+            <div class="flex max-w-full flex-row items-start justify-start gap-[24px] overflow-x-auto font-mona-sans text-9xl text-black">
+                <div class="w-[483px] max-w-full shrink-0 rounded-xl border-[1px] border-solid border-gainsboro p-[30px]">
+                    <div class="mb-12 flex flex-row items-start justify-between gap-[20px] self-stretch">
+                        <img class="relative h-[111px] shrink-0 overflow-hidden object-cover" loading="lazy" alt="" src="assets/images/engineering.svg" />
+                        <img class="relative h-[15.8px] w-[15.8px]" loading="lazy" alt="" src="assets/images/vector.svg" />
+                    </div>
+                    <h3 class="mb-3 mt-0 text-inherit font-medium">Engineering</h3>
+                    <p class="my-0 text-xl font-light leading-[28px]">
+                        Accelerate efficiency and business growth. Our agile software
+                        development approach empowers you to achieve your goals seamlessly
+                        and effectively.
+                    </p>
                 </div>
-                <h3 class="mt-0 mb-[2px] font-medium mq450:text-3xl leading-[42px] mq450:leading-[34px] text-inherit">
-                    Engineering
-                </h3>
-                <p class="text-xl leading-[28px] font-light mq450:text-base mq450:leading-[22px] my-0 h-[168px]">
-                    Accelerate efficiency and business growth. Our agile software
-                    development approach empowers you to achieve your goals
-                    seamlessly and effectively.
-                </p>
-            </div>
-            <div class="max-w-full w-[456px] shrink-0 rounded-xl bg-white pt-[30px] px-[31px] pb-[15px] border-[1px] border-solid border-gainsboro mq450:pt-5 mq450:pb-5 mq450:box-border">
-                <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mb-12 mq450:mb-[24px]">
-                    <img class="h-[111px] w-[101px] relative overflow-hidden shrink-0 object-cover" loading="lazy" alt="" src="assets/images/icon@2x.png" />
+                <div class="w-[483px] max-w-full shrink-0 rounded-xl border-[1px] border-solid border-gainsboro p-[30px] mq450:box-border mq450:pb-5 mq450:pt-5">
+                    <div class="mb-12 flex flex-row items-start justify-between gap-[20px] self-stretch mq450:mb-[24px]">
+                        <img class="relative h-[111px] shrink-0 overflow-hidden object-cover" loading="lazy" alt="" src="assets/images/digital-consulting.svg" />
 
-                    <img class="h-[15.8px] w-[15.8px] relative" loading="lazy" alt="" src="assets/images/vector.svg" />
+                        <img class="relative h-[15.8px] w-[15.8px]" loading="lazy" alt="" src="assets/images/vector.svg" />
+                    </div>
+                    <h3 class="mb-4 mt-0 text-inherit font-medium">
+                        Digital Consulting & Advisory
+                    </h3>
+                    <p class="my-0 text-xl font-light leading-[28px]">
+                        Accelerate efficiency and business growth. Our agile software
+                        development approach empowers you to achieve your goals seamlessly
+                        and effectively.
+                    </p>
                 </div>
-                <h3 class="mt-0 mb-[2px] font-medium mq450:text-3xl leading-[42px] mq450:leading-[34px] text-inherit">
-                    Engineering
-                </h3>
-                <p class="text-xl leading-[28px] font-light mq450:text-base mq450:leading-[22px] my-0 h-[168px]">
-                    Accelerate efficiency and business growth. Our agile software
-                    development approach empowers you to achieve your goals
-                    seamlessly and effectively.
-                </p>
-            </div>
-            <div class="max-w-full w-[456px] shrink-0 rounded-xl bg-white pt-[30px] px-[31px] pb-[15px] border-[1px] border-solid border-gainsboro mq450:pt-5 mq450:pb-5 mq450:box-border">
-                <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mb-12 mq450:mb-[24px]">
-                    <img class="h-[111px] w-[101px] relative overflow-hidden shrink-0 object-cover" loading="lazy" alt="" src="assets/images/icon@2x.png" />
+                <div class="w-[483px] max-w-full shrink-0 rounded-xl border-[1px] border-solid border-gainsboro p-[30px] mq450:box-border mq450:pb-5 mq450:pt-5">
+                    <div class="mb-12 flex flex-row items-start justify-between gap-[20px] self-stretch mq450:mb-[24px]">
+                        <img class="relative h-[111px] shrink-0 overflow-hidden object-cover" loading="lazy" alt="" src="assets/images/ai-data.svg" />
 
-                    <img class="h-[15.8px] w-[15.8px] relative" loading="lazy" alt="" src="assets/images/vector.svg" />
+                        <img class="relative" loading="lazy" alt="" src="assets/images/vector.svg" />
+                    </div>
+                    <h3 class="mb-4 mt-0 text-inherit font-medium">AI & Data</h3>
+                    <p class="my-0 text-xl font-light leading-[28px]">
+                        Accelerate efficiency and business growth. Our agile software
+                        development approach empowers you to achieve your goals seamlessly
+                        and effectively.
+                    </p>
                 </div>
-                <h3 class="mt-0 mb-[2px] font-medium mq450:text-3xl leading-[42px] mq450:leading-[34px] text-inherit">
-                    Engineering
-                </h3>
-                <p class="text-xl leading-[28px] font-light mq450:text-base mq450:leading-[22px] my-0 h-[168px]">
-                    Accelerate efficiency and business growth. Our agile software
-                    development approach empowers you to achieve your goals
-                    seamlessly and effectively.
-                </p>
-            </div>
-            <div class="max-w-full w-[456px] shrink-0 rounded-xl bg-white pt-[30px] px-[31px] pb-[15px] border-[1px] border-solid border-gainsboro mq450:pt-5 mq450:pb-5 mq450:box-border">
-                <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mb-12 mq450:mb-[24px]">
-                    <img class="h-[111px] w-[101px] relative overflow-hidden shrink-0 object-cover" loading="lazy" alt="" src="assets/images/icon@2x.png" />
-
-                    <img class="h-[15.8px] w-[15.8px] relative" loading="lazy" alt="" src="assets/images/vector.svg" />
-                </div>
-                <h3 class="mt-0 mb-[2px] font-medium mq450:text-3xl leading-[42px] mq450:leading-[34px] text-inherit">
-                    Engineering
-                </h3>
-                <p class="text-xl leading-[28px] font-light mq450:text-base mq450:leading-[22px] my-0 h-[168px]">
-                    Accelerate efficiency and business growth. Our agile software
-                    development approach empowers you to achieve your goals
-                    seamlessly and effectively.
-                </p>
             </div>
         </div>
     </section>
     <!-- Section Section Services Cards End -->
 
-
-
     <!-- Section Case Studies Start -->
-    <section class="w-full relative bg-black overflow-hidden flex flex-col items-start justify-start pt-[30px] pb-14 pe-[102px] ps-28 box-border gap-[48px] leading-[normal] tracking-[normal] text-left text-21xl text-white font-mona-sans mq975:ps-14 mq975:pe-[51px] mq975:box-border mq700:gap-[24px] mq700:ps-7 mq700:pe-[25px] mq700:box-border">
-        <div class="cd-container">
-            <h3 class="my-0 text-inherit tracking-[-1.4px] leading-[91px] font-semibold font-inherit mq950:text-13xl mq950:leading-[73px] mq450:text-5xl mq450:leading-[55px]">
-                Case studies
-            </h3>
-            <div class="self-stretch grid grid-cols-2 mq1325:grid-cols-1 gap-y-[48px] gap-[32.2px] max-w-full text-left text-xl text-white font-mona-sans mq700:gap-y-[16px] mq700:gap-[16px]">
-                <div class="flex-1 rounded-[8.37px] overflow-hidden flex flex-row items-start justify-start bg-[url('../images/case-studies/lsu.jpg')] bg-cover bg-no-repeat bg-[top] max-w-full mq950:min-w-full">
-                    <img class="self-stretch w-[837px] object-cover hidden min-h-[481px]" alt="" src="assets/images/case-studies/lsu.jpg" />
-                    <div class="flex-1 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] overflow-hidden flex flex-col items-start justify-end pt-[357.6px] pb-[27.7px] mq1325:pe-3 mq1325:ps-3 pe-5 ps-8 box-border gap-[16.7px] shrink-0 max-w-full z-[1] mq700:pt-[232px] mq700:pb-3 mq700:box-border">
-                        <img class="h-[23px] relative object-contain z-[2]" loading="lazy" alt="" src="assets/images/case-studies/lsu-logo.svg" />
-                        <p class="m-0 leading-[28px] font-medium inline-block min-h-[85px] w-[40rem] max-w-full z-[2] mq450:text-base mq450:leading-[22px]">
-                            HIPAA-compliant survey application to gather reliable health data from individuals with
-                            speech
-                            disorders.
+    <section class="page-section case-study-section flex w-full gap-[48px] overflow-hidden bg-black font-mona-sans text-21xl text-white mq700:box-border mq700:gap-[24px]">
+        <div class="thm-container">
+            <h2>Case studies</h2>
+            <div class="grid grid-cols-2 gap-[32.2px] gap-y-[48px] self-stretch text-left text-xl mq1325:grid-cols-1 mq700:gap-[16px] mq700:gap-y-[16px]">
+                <div class="relative overflow-hidden rounded-[8.37px] bg-[url('../images/case-studies/lsu.jpg')] bg-cover bg-[top] bg-no-repeat mq950:min-w-full">
+                    <div class="apect-ratio-thumb">
+                        <img class="case-study-thumb w-[837px] self-stretch object-cover" alt="" src="assets/images/case-studies/lsu.jpg" />
+                    </div>
+                    <div class="absolute bottom-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border">
+                        <img class="relative z-[2] h-[23px] object-contain" loading="lazy" alt="" src="assets/images/case-studies/lsu-logo.svg" />
+                        <p class="z-[2] m-0 inline-block min-h-[85px] w-[40rem] max-w-full font-medium leading-[28px] mq450:text-base mq450:leading-[22px]">
+                            HIPAA-compliant survey application to gather reliable health
+                            data from individuals with speech disorders.
                         </p>
                     </div>
                 </div>
-                <div class="flex-1 rounded-[8.37px] overflow-hidden flex flex-row items-start justify-start bg-[url('../images/case-studies/stc-pay.jpg')] bg-cover bg-no-repeat bg-[top] max-w-full mq950:min-w-full">
-                    <img class="self-stretch w-[837px] object-cover hidden min-h-[481px]" alt="" src="assets/images/case-studies/stc-pay.jpg" />
-                    <div class="flex-1 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] overflow-hidden flex flex-col items-start justify-end  pt-[357.6px] pb-[27.7px] mq1325:pe-3 mq1325:ps-3 pe-5 ps-8 box-border gap-[16.7px] shrink-0 max-w-full z-[1] mq700:pt-[232px] mq700:pb-3 mq700:box-border">
-                        <img class="h-[23px] relative object-contain z-[2]" loading="lazy" alt="" src="assets/images/case-studies/stc-pay-logo.svg" />
-                        <p class="m-0 leading-[28px] font-medium inline-block w-[40rem] max-w-full z-[2] mq450:text-base mq450:leading-[22px] min-h-[85px]">
-                            Designed and integrated a remittance module to increase the Bank of Bahrain.
+                <div class="relative flex max-w-full flex-1 flex-row items-start justify-start overflow-hidden rounded-[8.37px] bg-[url('../images/case-studies/stc-pay.jpg')] bg-cover bg-[top] bg-no-repeat mq950:min-w-full">
+                    <div class="apect-ratio-thumb">
+                        <img class="case-study-thumb self-stretch object-cover" alt="" src="assets/images/case-studies/stc-pay.jpg" />
+                    </div>
+                    <div class="absolute bottom-0 left-0 z-[1] box-border flex max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3">
+                        <img class="relative z-[2] h-[23px] object-contain" loading="lazy" alt="" src="assets/images/case-studies/stc-pay-logo.svg" />
+                        <p class="z-[2] m-0 inline-block min-h-[85px] w-[40rem] max-w-full font-medium leading-[28px] mq450:text-base mq450:leading-[22px]">
+                            Designed and integrated a remittance module to increase the Bank
+                            of Bahrain.
                         </p>
                     </div>
                 </div>
-                <div class="flex-1 rounded-[8.37px] overflow-hidden flex flex-row items-start justify-start bg-[url('../images/case-studies/family-dollar.jpg')] bg-cover bg-no-repeat bg-[top] max-w-full mq950:min-w-full">
-                    <img class="self-stretch w-[837px] object-cover hidden min-h-[481px]" alt="" src="assets/images/case-studies/family-dollar.jpg" />
-                    <div class="flex-1 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] overflow-hidden flex flex-col items-start justify-end pt-[357.6px] pb-[27.7px] mq1325:pe-3 mq1325:ps-3 pe-5 ps-8 box-border gap-[16.7px] shrink-0 max-w-full z-[1] mq700:pt-[232px] mq700:pb-3 mq700:box-border">
-                        <img class="h-[23px] relative object-contain z-[2]" loading="lazy" alt="" src="assets/images/case-studies/family-dollar-logo.svg" />
-                        <p class="m-0 leading-[28px] font-medium inline-block w-[40rem] max-w-full z-[2] mq450:text-base mq450:leading-[22px] min-h-[85px]">
-                            Increased overall sales by automating field audits via a custom mobile app.
+                <div class="relative flex max-w-full flex-1 flex-row items-start justify-start overflow-hidden rounded-[8.37px] bg-[url('../images/case-studies/family-dollar.jpg')] bg-cover bg-[top] bg-no-repeat mq950:min-w-full">
+                    <div class="apect-ratio-thumb">
+                        <img class="case-study-thumb self-stretch object-cover" alt="" src="assets/images/case-studies/family-dollar.jpg" />
+                    </div>
+                    <div class="absolute bottom-0 left-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3">
+                        <img class="relative z-[2] h-[23px] object-contain" loading="lazy" alt="" src="assets/images/case-studies/family-dollar-logo.svg" />
+                        <p class="z-[2] m-0 inline-block min-h-[85px] w-[40rem] max-w-full font-medium leading-[28px] mq450:text-base mq450:leading-[22px]">
+                            Increased overall sales by automating field audits via a custom
+                            mobile app.
                         </p>
                     </div>
                 </div>
-                <div class="flex-1 rounded-[8.37px] overflow-hidden flex flex-row items-start justify-start bg-[url('../images/case-studies/caribbean-airlines.jpg')] bg-cover bg-no-repeat bg-[top] max-w-full mq950:min-w-full">
-                    <img class="self-stretch w-[837px] object-cover hidden min-h-[481px]" alt="" src="assets/images/case-studies/caribbean-airlines.jpg" />
-                    <div class="flex-1 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] overflow-hidden flex flex-col items-start justify-end pt-[305px] pb-[27.7px] mq1325:pe-3 mq1325:ps-3 pe-5 ps-8 box-border gap-[14px] shrink-0 max-w-full z-[1] mq700:pt-[232px] mq700:pb-3 mq700:box-border">
-                        <img class="relative object-contain z-[2]" loading="lazy" alt="" src="assets/images/case-studies/caribbean-airlines-logo.svg" />
-                        <p class="m-0 leading-[28px] font-medium inline-block w-[40rem] max-w-full z-[2] mq450:text-base mq450:leading-[22px] min-h-[85px]">
-                            Enhanced the app performance with SIP integration and increased transparency with an
-                            automated
-                            client-facing
-                            refund web portal.
+                <div class="relative flex max-w-full flex-1 flex-row items-start justify-start overflow-hidden rounded-[8.37px] bg-[url('../images/case-studies/caribbean-airlines.jpg')] bg-cover bg-[top] bg-no-repeat mq950:min-w-full">
+                    <div class="apect-ratio-thumb">
+                        <img class="case-study-thumb self-stretch object-cover" alt="" src="assets/images/case-studies/caribbean-airlines.jpg" />
+                    </div>
+                    <div class="absolute bottom-0 left-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[14px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3">
+                        <img class="relative z-[2] object-contain" loading="lazy" alt="" src="assets/images/case-studies/caribbean-airlines-logo.svg" />
+                        <p class="z-[2] m-0 inline-block min-h-[85px] w-[40rem] max-w-full font-medium leading-[28px] mq450:text-base mq450:leading-[22px]">
+                            Enhanced the app performance with SIP integration and increased
+                            transparency with an automated client-facing refund web portal.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="self-stretch flex flex-row items-start justify-center py-0 pe-px ps-0">
-                <button class="cursor-pointer [border:none] pt-[18.2px] px-10 pb-[16.8px] bg-mediumaquamarine rounded-lg overflow-hidden flex flex-row items-start justify-start gap-[22.6px] text-[15px] tracking-[-0.15px] leading-[21px] uppercase font-semibold font-inter text-black text-left min-w-[81px]">
-                    All cases <img class="w-4 h-4 relative" alt="" src="assets/images/svg.svg" />
+            <div class="flex flex-row items-start justify-center self-stretch pe-px ps-0 pt-[40px]">
+                <button class="font-inter flex min-w-[81px] cursor-pointer flex-row items-start justify-start gap-[22.6px] overflow-hidden rounded-lg bg-mediumaquamarine px-10 pb-[16.8px] pt-[18.2px] text-left text-[15px] font-semibold uppercase leading-[21px] tracking-[-0.15px] text-black [border:none]">
+                    All cases
+                    <img class="relative h-4 w-4" alt="" src="assets/images/svg.svg" />
                 </button>
             </div>
         </div>
@@ -348,35 +338,34 @@
 
     <!-- Section Testimonials Start -->
 
-    <section class="py-14 pe-[92px] ps-28 text-21xl text-black font-mona-sans mq1350:ps-14 mq1350:pe-[46px] mq925:ps-7 mq925:pe-[23px]">
-        <div class="cd-container">
-            <h3 class="mt-0 mb-[47px] mq925:mb-[24px] text-inherit leading-[41px] tracking-[-1.4px] font-semibold mq450:text-5xl mq450:leading-[55px] mq925:text-13xl mq925:leading-[73px]">
-                What our clients say
-            </h3>
-            <div class="rounded-3xl bg-whitesmoke py-[70px] px-[71px] text-13xl text-black font-mona-sans border-[1px] border-solid border-gainsboro mq1350:ps-6 mq1350:pe-6 mq925:pt-7 mq925:pb-7">
-                <div class="flex flex-row items-start justify-between pe-1 ps-0 gap-[20px] mq1325:flex-wrap">
-                    <div class="w-[808px] flex flex-col max-w-full mq1325:min-w-full mq1325:flex-1">
-                        <img class="w-[57px] mb-[9px]" loading="lazy" alt="" src="assets/images/vector1.svg" />
-                        <h5 class="my-0 tracking-[-0.02em] leading-[40px] font-semibold mq450:text-lgi mq450:leading-[24px] mq925:text-[26px] mq925:leading-[32px] text-[32px] mb-[52px]">
-                            Great people to work with and we will continue to work with them. The whole interaction with
-                            code district
-                            was very
+    <section class="page-section overflow-hidden font-mona-sans text-21xl text-black">
+        <div class="thm-container">
+            <h2>What our clients say</h2>
+            <div class="rounded-3xl border-[1px] border-solid border-gainsboro bg-whitesmoke p-[4.375rem] font-mona-sans text-13xl text-black mq1350:pe-6 mq1350:ps-6 mq925:pb-7 mq925:pt-7">
+                <div class="flex flex-row items-start justify-between gap-[20px] pe-1 ps-0 mq1325:flex-wrap">
+                    <div class="flex w-[808px] max-w-full flex-col mq1325:min-w-full mq1325:flex-1">
+                        <img class="mb-[9px] w-[57px]" loading="lazy" alt="" src="assets/images/vector1.svg" />
+                        <h5 class="my-0 mb-14 text-[2rem] font-semibold tracking-[-0.02em] mq450:text-lgi">
+                            Great people to work with and we will continue to work with
+                            them. The whole interaction with code district was very
                             collaborative.
                         </h5>
-                        <h6 class="my-0 tracking-[-0.01em] leading-[19.96px] font-semibold mq450:text-lgi mq450:leading-[16px] text-5xl">
+                        <h6 class="my-0 text-5xl font-semibold leading-[19.96px] tracking-[-0.01em] mq450:text-lgi mq450:leading-[16px]">
                             Christian Yavorsky
                         </h6>
-                        <p class="mb-0 mt-[11px] text-[17.2px] tracking-[-0.01em] leading-[20px] font-medium font-inter text-gray-100">
+                        <p class="font-inter mb-0 mt-[11px] text-[17.2px] font-medium leading-[20px] tracking-[-0.01em] text-gray-100">
                             CO-FOUNDER & CHEIF SCIENTIFIC OFFICER
                         </p>
 
-                        <div class="flex flex-row items-center justify-start mt-[61px]">
+                        <div class="mt-[61px] flex flex-row items-center justify-start">
                             <img class="h-[36.5px] w-[36.5px]" loading="lazy" alt="" src="assets/images/arrow@2x.png" />
 
                             <img class="h-[36.5px] w-[36.5px]" loading="lazy" alt="" src="assets/images/arrow-1@2x.png" />
                         </div>
                     </div>
-                    <img class="h-[377px] w-[664px] flex justify-start mq1325:min-w-full mq1325:flex-1 max-w-full overflow-hidden max-h-full object-cover rounded-xl" loading="lazy" alt="" src="assets/images/testimonials/testimonials-overly.jpg" />
+                    <div class="client-img">
+                        <img class="flex max-h-full max-w-full justify-start overflow-hidden rounded-xl object-cover mq1325:min-w-full mq1325:flex-1" loading="lazy" alt="" src="assets/images/testimonials/testimonials-overly.jpg" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,17 +373,16 @@
 
     <!-- Section Testimonials End -->
 
-
     <!-- Section Stats CTA Start -->
 
-    <section class="w-full bg-gray-300 overflow-hidden pt-[198px] pb-[197px]">
-        <div class="cd-container">
-            <div class="flex flex-row items-start justify-between box-border gap-[40px] text-53xl text-lightslategray font-mona-sans mq1700:ps-[57px] mq1700:pe-[58px] mq1700:box-border mq900:ps-7 mq900:pe-[29px] mq900:box-border mq1325:flex-wrap">
-                <div class="self-stretch mq1650:max-w-full max-w-[50.438rem] mq1325:min-w-full mq1325:flex-1">
-                    <h3 class="mt-0 mb-[32px] mq1650:max-w-full mq450:mb-[16px] max-w-[46.188rem] text-inherit tracking-[-2.2px] leading-[76px] font-semibold font-inherit text-transparent !bg-clip-text [background:linear-gradient(91.61deg,_#b5ffec,_#fff)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mq450:text-24xl mq450:leading-[46px] mq900:text-39xl mq900:leading-[61px]">
+    <section class="w-full overflow-hidden bg-gray-300 pb-[197px] pt-[198px]">
+        <div class="thm-container">
+            <div class="box-border flex flex-row items-start justify-between gap-[40px] font-mona-sans text-53xl text-lightslategray mq1700:box-border mq1325:flex-wrap">
+                <div class="max-w-[50.438rem] self-stretch mq1650:max-w-full mq1325:min-w-full mq1325:flex-1">
+                    <h3 class="mb-8 mt-0 !bg-clip-text font-semibold leading-[76px] tracking-[-2.2px] text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background:linear-gradient(91.61deg,_#b5ffec,_#fff)] mq1650:max-w-full mq900:text-39xl mq900:leading-[61px] mq450:mb-[16px] mq450:text-24xl mq450:leading-[46px]">
                         We are growing fast so should you
                     </h3>
-                    <p class="my-0 mb-[60px] mq900:mb-[30px] text-5xl leading-[32px] font-medium mq450:text-lgi mq450:leading-[1.625rem]">
+                    <p class="my-0 mb-[60px] text-5xl font-medium leading-[32px] mq900:mb-[30px] mq450:text-lgi mq450:leading-[1.625rem]">
                         <span>You know your business can benefit from </span>
                         <span class="text-white">technology upgrades.</span>
                         <span class="text-lightslategray"> But from </span>
@@ -403,69 +391,63 @@
                         <span class="text-white">consulting team</span>
                         <span class="text-lightslategray"> comes in. </span>
                     </p>
-                    <a class="max-w-[244px] [text-decoration:none] rounded-lg bg-mediumaquamarine overflow-hidden flex flex-row items-start justify-start pt-[18px] pb-[17px] pe-[43px] ps-11 text-base text-black mq450:ps-5 mq450:pe-5 gap-[24px] leading-[21px] uppercase font-semibold">
-                        Let’s Create Together <img class="w-4 h-4 mt-[3px]" alt="" src="assets/images/svg1.svg" />
+                    <a class="flex max-w-[244px] flex-row items-start justify-start gap-[24px] overflow-hidden rounded-lg bg-mediumaquamarine pb-[17px] pe-[43px] ps-11 pt-[18px] text-base font-semibold uppercase leading-[21px] text-black [text-decoration:none] mq450:pe-5 mq450:ps-5">
+                        Let’s Create Together
+                        <img class="mt-[3px] h-4 w-4" alt="" src="assets/images/svg1.svg" />
                     </a>
                 </div>
-                <div class="w-[738px] flex flex-row items-start justify-start gap-[100px] max-w-full text-white font-manrope mq1325:min-w-full mq450:gap-[25px] mq900:flex-wrap mq900:gap-[50px] mq1325:flex-1">
-                    <div class="flex-1 flex flex-col items-start justify-start gap-[74px] min-w-[250px] mq450:gap-[37px]">
-                        <div class="self-stretch flex flex-col items-start justify-start gap-[19.5px]">
-                            <div class="self-stretch h-px relative box-border border-t-[1px] border-solid border-mediumaquamarine">
-                            </div>
-                            <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mt-[6px]">
-                                <h4 class=" my-0 tracking-[-4.14px] leading-[57px] font-medium mq450:text-24xl mq450:leading-[41px] mq900:text-39xl mq900:leading-[55px]">
+                <div class="flex w-[738px] max-w-full flex-row items-start justify-start gap-[100px] text-white mq1325:min-w-full mq1325:flex-1 mq900:flex-wrap mq900:gap-[50px] mq450:gap-[25px]">
+                    <div class="flex min-w-[250px] flex-1 flex-col items-start justify-start gap-[74px] mq450:gap-[37px]">
+                        <div class="flex flex-col items-start justify-start gap-[19.5px] self-stretch">
+                            <div class="relative box-border h-px self-stretch border-t-[1px] border-solid border-mediumaquamarine"></div>
+                            <div class="mt-[6px] flex flex-row items-start justify-between gap-[20px] self-stretch">
+                                <h4 class="my-0 font-medium leading-[57px] tracking-[-4.14px] mq900:text-39xl mq900:leading-[55px] mq450:text-24xl mq450:leading-[41px]">
                                     35%
                                 </h4>
-                                <img class="w-7 h-7 mt-[14px]" alt="" src="assets/images/svg2.svg" />
+                                <img class="mt-[14px] h-7 w-7" alt="" src="assets/images/svg2.svg" />
                             </div>
-                            <p class="mb-0 mt-[6px] text-base leading-[24px] font-medium font-inter">Year on Year Growth
+                            <p class="font-inter mb-0 mt-[6px] text-base font-medium leading-[24px]">
+                                Year on Year Growth
                             </p>
                         </div>
-                        <div class="self-stretch flex flex-col items-start justify-start gap-[19.5px]">
-                            <div class="self-stretch h-px relative box-border border-t-[1px] border-solid border-mediumaquamarine">
-                            </div>
-                            <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mt-[6px]">
-                                <h4 class=" my-0 tracking-[-4.14px] leading-[57px] font-medium mq450:text-24xl mq450:leading-[41px] mq900:text-39xl mq900:leading-[55px]">
+                        <div class="flex flex-col items-start justify-start gap-[19.5px] self-stretch">
+                            <div class="relative box-border h-px self-stretch border-t-[1px] border-solid border-mediumaquamarine"></div>
+                            <div class="mt-[6px] flex flex-row items-start justify-between gap-[20px] self-stretch">
+                                <h4 class="my-0 font-medium leading-[57px] tracking-[-4.14px] mq900:text-39xl mq900:leading-[55px] mq450:text-24xl mq450:leading-[41px]">
                                     500+
                                 </h4>
-                                <img class="w-7 h-7 mt-[14px]" alt="" src="assets/images/svg2.svg" />
+                                <img class="mt-[14px] h-7 w-7" alt="" src="assets/images/svg2.svg" />
                             </div>
-                            <p class="mb-0 mt-[6px] text-base leading-[24px] font-medium font-inter">Projects finished
-                                with
-                                at
-                                least an x2
-                                average annual revenue boost. </p>
+                            <p class="font-inter mb-0 mt-[6px] text-base font-medium leading-[24px]">
+                                Projects finished with at least an x2 average annual revenue
+                                boost.
+                            </p>
                         </div>
                     </div>
-                    <div class="flex-1 flex flex-col items-start justify-start gap-[50px] mq1325:gap-[74px] mq1025:gap-[50px] min-w-[250px] mq450:gap-[37px]">
-                        <div class="self-stretch flex flex-col items-start justify-start gap-[19.5px]">
-                            <div class="self-stretch h-px relative box-border border-t-[1px] border-solid border-mediumaquamarine">
-                            </div>
-                            <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mt-[6px]">
-                                <h4 class=" my-0 tracking-[-4.14px] leading-[57px] font-medium mq450:text-24xl mq450:leading-[41px] mq900:text-39xl mq900:leading-[55px]">
+                    <div class="flex min-w-[250px] flex-1 flex-col items-start justify-start gap-[50px] mq1325:gap-[74px] mq1025:gap-[50px] mq450:gap-[37px]">
+                        <div class="flex flex-col items-start justify-start gap-[19.5px] self-stretch">
+                            <div class="relative box-border h-px self-stretch border-t-[1px] border-solid border-mediumaquamarine"></div>
+                            <div class="mt-[6px] flex flex-row items-start justify-between gap-[20px] self-stretch">
+                                <h4 class="my-0 font-medium leading-[57px] tracking-[-4.14px] mq900:text-39xl mq900:leading-[55px] mq450:text-24xl mq450:leading-[41px]">
                                     15+
                                 </h4>
-                                <img class="w-7 h-7 mt-[14px]" alt="" src="assets/images/svg2.svg" />
+                                <img class="mt-[14px] h-7 w-7" alt="" src="assets/images/svg2.svg" />
                             </div>
-                            <p class="mb-0 mt-[6px] text-base leading-[24px] font-medium font-inter">Satisfied clients
-                                with
-                                at
-                                least a
-                                3-year collaboration record. </p>
+                            <p class="font-inter mb-0 mt-[6px] text-base font-medium leading-[24px]">
+                                Satisfied clients with at least a 3-year collaboration record.
+                            </p>
                         </div>
-                        <div class="self-stretch flex flex-col items-start justify-start gap-[19.5px]">
-                            <div class="self-stretch h-px relative box-border border-t-[1px] border-solid border-mediumaquamarine">
-                            </div>
-                            <div class="self-stretch flex flex-row items-start justify-between gap-[20px] mt-[6px]">
-                                <h4 class=" my-0 tracking-[-4.14px] leading-[57px] font-medium mq450:text-24xl mq450:leading-[41px] mq900:text-39xl mq900:leading-[55px]">
+                        <div class="flex flex-col items-start justify-start gap-[19.5px] self-stretch">
+                            <div class="relative box-border h-px self-stretch border-t-[1px] border-solid border-mediumaquamarine"></div>
+                            <div class="mt-[6px] flex flex-row items-start justify-between gap-[20px] self-stretch">
+                                <h4 class="my-0 font-medium leading-[57px] tracking-[-4.14px] mq900:text-39xl mq900:leading-[55px] mq450:text-24xl mq450:leading-[41px]">
                                     100+
                                 </h4>
-                                <img class="w-7 h-7 mt-[14px]" alt="" src="assets/images/svg2.svg" />
+                                <img class="mt-[14px] h-7 w-7" alt="" src="assets/images/svg2.svg" />
                             </div>
-                            <p class="mb-0 mt-[6px] text-base leading-[24px] font-medium font-inter">Certified full-time
-                                pros
-                                with field
-                                experience on board. </p>
+                            <p class="font-inter mb-0 mt-[6px] text-base font-medium leading-[24px]">
+                                Certified full-time pros with field experience on board.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -475,152 +457,136 @@
 
     <!-- Section Stats CTA End -->
 
-
     <!-- Section Blog Start -->
 
+    <section class="page-section w-full gap-[48px] overflow-hidden bg-white pb-[53.2px] pe-0 pt-14 font-mona-sans text-21xl text-black mq975:box-border mq700:box-border mq700:gap-[24px]">
+        <div class="thm-container">
+            <h2>Insights</h2>
 
-    <section class="bg-white w-full overflow-hidden pt-14 pb-[53.2px] pe-0 ps-28 box-border gap-[48px] text-21xl text-black font-mona-sans mq700:gap-[24px] mq700:ps-7 mq700:box-border mq975:ps-14 mq975:box-border">
-        <h3 class="mt-0 mb-[47px] w-[461px] text-inherit tracking-[-1.4px] leading-[41px] font-semibold font-inherit shrink-0 mq450:text-5xl mq450:leading-[55px] mq950:text-13xl mq950:leading-[73px]">
-            Insights
-        </h3>
-        <div class="w-[1808px] overflow-x-auto flex flex-row items-start justify-start gap-[24px] max-w-full text-smi text-white">
-            <div class="w-[400px] shrink-0 flex flex-col items-start justify-start pb-[0.5px] box-border gap-[18.9px] max-w-full">
-                <img src="assets/images/blog/blog-1.jpg" alt="blog-placeholder" class="" />
-                <div class="self-stretch flex flex-col items-start justify-start gap-[15.8px] shrink-0 max-w-full">
-                    <div class="flex flex-row items-center gap-[8px]">
-                        <span class="rounded-21xl bg-gray-400 flex flex-row items-center justify-start py-[6px] pe-[11px] ps-3 whitespace-nowrap tracking-[-0.13px] leading-[16px] uppercase font-semibold">
-                            News & Articles
-                        </span>
-                        <span class="leading-[18.2px] inline-block min-w-[67.1px] text-gray-400">
-                            23.05.2024
-                        </span>
-                    </div>
-                    <h4 class="m-0 flex-1 text-black text-5xl tracking-[-0.64px] leading-[38.4px] font-bold max-w-full mq450:text-base mq450:leading-[31px] pb-[38px] pe-1.5">
-                        CD Shines at the Trident Club's Monthly Showcase Meetup
-                    </h4>
-                    <div class="flex flex-row items-center pe-5 ps-0 gap-[7.6px] text-gray-400">
-                        <span class="leading-[19px] inline-block min-w-[53px]"> By Helen</span>
-                        <span class="w-1.5 h-1.5 rounded-10xs bg-gray-400"></span>
-                        <span class="leading-[18.2px] inline-block min-w-[32.3px] "> 5 min </span>
+            <div class="flex max-w-full flex-row items-start justify-start gap-[24px] overflow-x-auto text-smi text-white">
+                <div class="box-border flex w-[400px] max-w-full shrink-0 flex-col items-start justify-start gap-[18.9px] pb-[0.5px]">
+                    <img src="assets/images/blog/blog-1.jpg" alt="blog-placeholder" class="w-full" />
+                    <div class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
+                        <h4 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
+                            CD Shines at the Trident Club's Monthly Showcase Meetup
+                        </h4>
+                        <div class="flex flex-row items-center gap-[7.6px] pe-5 ps-0 text-gray-400">
+                            <span class="inline-block min-w-[53px] leading-[19px]">
+                                By Helen</span>
+                            <span class="h-1.5 w-1.5 rounded-10xs bg-gray-400"></span>
+                            <span class="inline-block min-w-[32.3px] leading-[18.2px]">
+                                5 min
+                            </span>
+                        </div>
                     </div>
                 </div>
+                <div class="box-border flex w-[400px] max-w-full shrink-0 flex-col items-start justify-start gap-[18.9px] pb-[0.5px]">
+                    <img class="w-full" src="assets/images/blog/blog-2.jpg" alt="blog-placeholder" />
+                    <div class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
+                        <h4 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
+                            CD Shines at the Trident Club's Monthly Showcase Meetup
+                        </h4>
+                        <div class="flex flex-row items-center gap-[7.6px] pe-5 ps-0 text-gray-400">
+                            <span class="inline-block min-w-[53px] leading-[19px]">
+                                By Helen</span>
+                            <span class="h-1.5 w-1.5 rounded-10xs bg-gray-400"></span>
+                            <span class="inline-block min-w-[32.3px] leading-[18.2px]">
+                                5 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-border flex w-[400px] max-w-full shrink-0 flex-col items-start justify-start gap-[18.9px] pb-[0.5px]">
+                    <img class="w-full" src="assets/images/blog/blog-3.jpg" alt="blog-placeholder" />
+                    <div class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
+                        <h4 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
+                            CD Shines at the Trident Club's Monthly Showcase Meetup
+                        </h4>
+                        <div class="flex flex-row items-center gap-[7.6px] pe-5 ps-0 text-gray-400">
+                            <span class="inline-block min-w-[53px] leading-[19px]">
+                                By Helen</span>
+                            <span class="h-1.5 w-1.5 rounded-10xs bg-gray-400"></span>
+                            <span class="inline-block min-w-[32.3px] leading-[18.2px]">
+                                5 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-border flex w-[400px] max-w-full shrink-0 flex-col items-start justify-start gap-[18.9px] pb-[0.5px]">
+                    <img class="w-full" src="assets/images/blog/blog-4.jpg" alt="blog-placeholder" />
+                    <div class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
+                        <h4 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
+                            CD Shines at the Trident Club's Monthly Showcase Meetup
+                        </h4>
+                        <div class="flex flex-row items-center gap-[7.6px] pe-5 ps-0 text-gray-400">
+                            <span class="inline-block min-w-[53px] leading-[19px]">
+                                By Helen</span>
+                            <span class="h-1.5 w-1.5 rounded-10xs bg-gray-400"></span>
+                            <span class="inline-block min-w-[32.3px] leading-[18.2px]">
+                                5 min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div
+            class="box-border flex w-[400px] max-w-full shrink-0 flex-col items-start justify-start gap-[18.9px] pb-[0.5px]">
+            <img src="assets/images/blog/blog-1.jpg" alt="blog-placeholder" />
+            <div
+              class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
+              <div class="flex flex-row items-center gap-[8px]">
+                <span
+                  class="flex flex-row items-center justify-start whitespace-nowrap rounded-21xl bg-gray-400 py-[6px] pe-[11px] ps-3 font-semibold uppercase leading-[16px] tracking-[-0.13px]">
+                  News & Articles
+                </span>
+                <span
+                  class="inline-block min-w-[67.1px] leading-[18.2px] text-gray-400">
+                  23.05.2024
+                </span>
+              </div>
+              <h4
+                class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
+                CD Shines at the Trident Club's Monthly Showcase Meetup
+              </h4>
+              <div
+                class="flex flex-row items-center gap-[7.6px] pe-5 ps-0 text-gray-400">
+                <span class="inline-block min-w-[53px] leading-[19px]">
+                  By Helen</span
+                >
+                <span class="h-1.5 w-1.5 rounded-10xs bg-gray-400"></span>
+                <span class="inline-block min-w-[32.3px] leading-[18.2px]">
+                  5 min
+                </span>
+              </div>
             </div>
-            <div class="w-[400px] shrink-0 flex flex-col items-start justify-start pb-[0.5px] box-border gap-[18.9px] max-w-full">
-                <img src="assets/images/blog/blog-2.jpg" alt="blog-placeholder" />
-                <div class="self-stretch flex flex-col items-start justify-start gap-[15.8px] shrink-0 max-w-full">
-                    <div class="flex flex-row items-center gap-[8px]">
-                        <span class="rounded-21xl bg-gray-400 flex flex-row items-center justify-start py-[6px] pe-[11px] ps-3 whitespace-nowrap tracking-[-0.13px] leading-[16px] uppercase font-semibold">
-                            News & Articles
-                        </span>
-                        <span class="leading-[18.2px] inline-block min-w-[67.1px] text-gray-400">
-                            23.05.2024
-                        </span>
-                    </div>
-                    <h4 class="m-0 flex-1 text-black text-5xl tracking-[-0.64px] leading-[38.4px] font-bold max-w-full mq450:text-base mq450:leading-[31px] pb-[38px] pe-1.5">
-                        CD Shines at the Trident Club's Monthly Showcase Meetup
-                    </h4>
-                    <div class="flex flex-row items-center pe-5 ps-0 gap-[7.6px] text-gray-400">
-                        <span class="leading-[19px] inline-block min-w-[53px]"> By Helen</span>
-                        <span class="w-1.5 h-1.5 rounded-10xs bg-gray-400"></span>
-                        <span class="leading-[18.2px] inline-block min-w-[32.3px] "> 5 min </span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-[400px] shrink-0 flex flex-col items-start justify-start pb-[0.5px] box-border gap-[18.9px] max-w-full">
-                <img src="assets/images/blog/blog-3.jpg" alt="blog-placeholder" />
-                <div class="self-stretch flex flex-col items-start justify-start gap-[15.8px] shrink-0 max-w-full">
-                    <div class="flex flex-row items-center gap-[8px]">
-                        <span class="rounded-21xl bg-gray-400 flex flex-row items-center justify-start py-[6px] pe-[11px] ps-3 whitespace-nowrap tracking-[-0.13px] leading-[16px] uppercase font-semibold">
-                            News & Articles
-                        </span>
-                        <span class="leading-[18.2px] inline-block min-w-[67.1px] text-gray-400">
-                            23.05.2024
-                        </span>
-                    </div>
-                    <h4 class="m-0 flex-1 text-black text-5xl tracking-[-0.64px] leading-[38.4px] font-bold max-w-full mq450:text-base mq450:leading-[31px] pb-[38px] pe-1.5">
-                        CD Shines at the Trident Club's Monthly Showcase Meetup
-                    </h4>
-                    <div class="flex flex-row items-center pe-5 ps-0 gap-[7.6px] text-gray-400">
-                        <span class="leading-[19px] inline-block min-w-[53px]"> By Helen</span>
-                        <span class="w-1.5 h-1.5 rounded-10xs bg-gray-400"></span>
-                        <span class="leading-[18.2px] inline-block min-w-[32.3px] "> 5 min </span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-[400px] shrink-0 flex flex-col items-start justify-start pb-[0.5px] box-border gap-[18.9px] max-w-full">
-                <img src="assets/images/blog/blog-4.jpg" alt="blog-placeholder" />
-                <div class="self-stretch flex flex-col items-start justify-start gap-[15.8px] shrink-0 max-w-full">
-                    <div class="flex flex-row items-center gap-[8px]">
-                        <span class="rounded-21xl bg-gray-400 flex flex-row items-center justify-start py-[6px] pe-[11px] ps-3 whitespace-nowrap tracking-[-0.13px] leading-[16px] uppercase font-semibold">
-                            News & Articles
-                        </span>
-                        <span class="leading-[18.2px] inline-block min-w-[67.1px] text-gray-400">
-                            23.05.2024
-                        </span>
-                    </div>
-                    <h4 class="m-0 flex-1 text-black text-5xl tracking-[-0.64px] leading-[38.4px] font-bold max-w-full mq450:text-base mq450:leading-[31px] pb-[38px] pe-1.5">
-                        CD Shines at the Trident Club's Monthly Showcase Meetup
-                    </h4>
-                    <div class="flex flex-row items-center pe-5 ps-0 gap-[7.6px] text-gray-400">
-                        <span class="leading-[19px] inline-block min-w-[53px]"> By Helen</span>
-                        <span class="w-1.5 h-1.5 rounded-10xs bg-gray-400"></span>
-                        <span class="leading-[18.2px] inline-block min-w-[32.3px] "> 5 min </span>
-                    </div>
-                </div>
-            </div>
-            <div class="w-[400px] shrink-0 flex flex-col items-start justify-start pb-[0.5px] box-border gap-[18.9px] max-w-full">
-                <img src="assets/images/blog/blog-1.jpg" alt="blog-placeholder" />
-                <div class="self-stretch flex flex-col items-start justify-start gap-[15.8px] shrink-0 max-w-full">
-                    <div class="flex flex-row items-center gap-[8px]">
-                        <span class="rounded-21xl bg-gray-400 flex flex-row items-center justify-start py-[6px] pe-[11px] ps-3 whitespace-nowrap tracking-[-0.13px] leading-[16px] uppercase font-semibold">
-                            News & Articles
-                        </span>
-                        <span class="leading-[18.2px] inline-block min-w-[67.1px] text-gray-400">
-                            23.05.2024
-                        </span>
-                    </div>
-                    <h4 class="m-0 flex-1 text-black text-5xl tracking-[-0.64px] leading-[38.4px] font-bold max-w-full mq450:text-base mq450:leading-[31px] pb-[38px] pe-1.5">
-                        CD Shines at the Trident Club's Monthly Showcase Meetup
-                    </h4>
-                    <div class="flex flex-row items-center pe-5 ps-0 gap-[7.6px] text-gray-400">
-                        <span class="leading-[19px] inline-block min-w-[53px]"> By Helen</span>
-                        <span class="w-1.5 h-1.5 rounded-10xs bg-gray-400"></span>
-                        <span class="leading-[18.2px] inline-block min-w-[32.3px] "> 5 min </span>
-                    </div>
-                </div>
+          </div> -->
             </div>
         </div>
     </section>
 
-
     <!-- Section Blog End -->
-
 
     <!-- Section Awards Start -->
 
-    <section class="w-full bg-generic-white overflow-hidden flex flex-col items-center justify-start pt-[1.75rem] pb-[3.5rem] pe-[1.25rem] ps-[1.562rem] box-border">
-        <div class="w-[106.313rem] flex flex-col items-start justify-start py-[0rem] px-[0rem] box-border max-w-full mq450:gap-[1rem] mq825:gap-[2rem]">
-            <h3 class="m-0 text-[2.5rem] tracking-[-1.4px] leading-[5.688rem] font-semibold font-mona-sans text-black max-w-full mq450:text-[1.5rem] mq450:leading-[3.438rem] mq825:text-[2rem] mq825:leading-[4.563rem]">
-                You don’t get too many of these for nothing</h3>
-            <div class="box-border max-w-full mq450:gap-[1rem] mq825:gap-[2rem] overflow-hidden pe-[3.375rem] ps-[3.312rem] [background:linear-gradient(90deg,_#fff,_rgba(239,_239,_239,_0)_50.5%,_#fff)] border-[1px] border-solid border-lightgray self-stretch rounded-xl pt-[1.562rem] pb-[1.625rem] mq1425:ps-[1.625rem] mq1425:pe-[1.688rem] mq1425:box-border">
-
+    <section class="page-section flex w-full flex-col items-center justify-start bg-generic-white">
+        <div class="thm-container">
+            <h2>You don’t get too many of these for nothing</h2>
+            <div class="box-border max-w-full self-stretch overflow-hidden rounded-xl border-[1px] border-solid border-lightgray pb-[1.625rem] pe-[3.375rem] ps-[3.312rem] pt-[1.562rem] [background:linear-gradient(90deg,_#fff,_rgba(239,_239,_239,_0)_50.5%,_#fff)] mq1425:box-border mq1425:pe-[1.688rem] mq1425:ps-[1.625rem] mq825:gap-[2rem] mq450:gap-[1rem]">
                 <div class="flex flex-row items-center justify-center gap-[.7rem] mq1425:flex-wrap">
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.806rem] max-w-full" loading="lazy" alt="" src="assets/images/awards/clutch-web-developers.png" />
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[6.269rem] max-w-full" loading="lazy" alt="" src="assets/images/awards/superbcompanies.png" />
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.75rem] w-[7.144rem]" loading="lazy" alt="" src="assets/images/awards/clutch-modernization-service.png" />
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.144rem] max-w-full" loading="lazy" alt="" src="assets/images/awards/business-firms.png" />
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.725rem] w-[7.144rem]" loading="lazy" alt="" src="assets/images/awards/clutch-artificial-intelligence-company.png" />
-                    <img class="px-[0.937rem] pb-[0.262rem] w-[7.144rem] h-[7.144rem]" loading="lazy" alt="" src="assets/images/awards/featured-on-upcity.png" />
+                    <img class="h-[7.806rem] max-w-full px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/clutch-web-developers.png" />
+                    <img class="h-[6.269rem] max-w-full px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/superbcompanies.png" />
+                    <img class="h-[7.75rem] w-[7.144rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/clutch-modernization-service.png" />
+                    <img class="h-[7.144rem] max-w-full px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/business-firms.png" />
+                    <img class="h-[7.725rem] w-[7.144rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/clutch-artificial-intelligence-company.png" />
+                    <img class="h-[7.144rem] w-[7.144rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/featured-on-upcity.png" />
 
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.725rem] w-[7.144rem]" loading="lazy" alt="" src="assets/images/awards/clutch-iot-company.png" />
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.144rem] max-w-full" alt="" src="assets/images/awards/techroviewer.png" />
+                    <img class="h-[7.725rem] w-[7.144rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/clutch-iot-company.png" />
+                    <img class="h-[7.144rem] max-w-full px-[0.937rem] pb-[0.262rem]" alt="" src="assets/images/awards/techroviewer.png" />
 
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.694rem] w-[7.144rem]" loading="lazy" alt="" src="assets/images/awards/clutch-machine-learning-company.png" />
+                    <img class="h-[7.694rem] w-[7.144rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/clutch-machine-learning-company.png" />
 
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.088rem] w-[7.863rem]" loading="lazy" alt="" src="assets/images/awards/appfutura.png" />
+                    <img class="h-[7.088rem] w-[7.863rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/appfutura.png" />
 
-                    <img class="px-[0.937rem] pb-[0.262rem] h-[7.725rem] w-[7.144rem]" loading="lazy" alt="" src="assets/images/awards/clutch-machine-learning-company.png" />
-
+                    <img class="h-[7.725rem] w-[7.144rem] px-[0.937rem] pb-[0.262rem]" loading="lazy" alt="" src="assets/images/awards/clutch-machine-learning-company.png" />
                 </div>
             </div>
         </div>
@@ -629,84 +595,90 @@
     <!-- Section Awards End -->
 
     <!-- Section CTA Start -->
-    <section class="w-full relative bg-black overflow-hidden flex flex-row items-start justify-between py-[7rem] pe-[7.437rem] ps-[7rem] box-border tracking-[normal] leading-[normal] gap-[1.25rem] text-left text-[1.5rem] text-generic-white font-mona-sans mq1700:ps-[3.5rem] mq1700:pe-[3.688rem] mq1700:box-border mq900:ps-[1.75rem] mq900:pe-[1.813rem] mq900:box-border mq1325:flex-wrap">
-        <div class="w-[43.313rem] flex flex-col items-start justify-start max-w-full mq1325:min-w-full mq1725:flex-1">
+    <section class="bg-black py-[7rem] font-mona-sans text-[1.5rem] text-generic-white mq1325:flex-wrap">
+        <div class="thm-container">
+            <div class="flex justify-between gap-5 mq1325:flex-col">
+                <div class="flex w-[43.313rem] max-w-full flex-col items-start justify-start mq1725:flex-1 mq1325:min-w-full">
+                    <img class="relative mb-[0.312rem] h-[1.081rem] w-[1.581rem]" loading="lazy" alt="" src="assets/images/main-cta/quote.svg" />
 
-            <img class="w-[1.581rem] h-[1.081rem] relative mb-[0.312rem]" loading="lazy" alt="" src="assets/images/main-cta/quote.svg" />
-
-            <p class="m-0 mb-2 mq700:h-auto h-[7.938rem] relative tracking-[-0.01em] leading-[2rem] inline-block shrink-0 mq450:text-[1.188rem] mq450:leading-[1.625rem]">
-                We were live and our platform was having difficulty supporting a
-                simultaneous number of users. They saved the day with their
-                solid grip on architecture level solutions.
-            </p>
-            <div class="mt-[1.3rem] flex flex-row items-center justify-start gap-[1.5rem] text-gray-1000">
-                <img class="h-[4.5rem] w-[4.5rem] object-cover min-h-[4.5rem]" loading="lazy" alt="" src="assets/images/main-cta/cta-avtar.png" />
-                <div class="flex flex-col items-start justify-start">
-                    <h6 class="m-0 tracking-[-0.01em] leading-[2.5rem] font-semibold text-[1.5rem] mq450:text-[1.188rem] mq450:leading-[2.188rem]">
-                        Reva McPollom </h6>
-                    <p class="my-0 text-[1.25rem] tracking-[-0.01em] leading-[2.5rem] font-medium mq450:text-[1rem] mq450:leading-[2.188rem]">
-                        Lessonbee Founder </p>
-                </div>
-            </div>
-            <div class="mt-[2.2rem] mq900:mt-[1.875rem] flex flex-row items-start justify-start gap-[0.668rem]">
-                <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-mediumaquamarine"></span>
-                <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-gray-700"></span>
-                <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-gray-700"></span>
-                <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-gray-700"></span>
-            </div>
-
-            <div class="mt-[3.75rem] mq900:mt-[1.875rem] h-[3.438rem] flex flex-row mq700:h-auto mq700:flex-wrap mq700:items-start items-center justify-start pe-[1.5rem] box-border gap-[1.562rem] max-w-full mq700:min-w-full text-[0.75rem] font-mona-sans">
-                <img class="h-[2.956rem] w-[16.469rem] relative object-contain" loading="lazy" alt="" src="assets/images/main-cta/goodfirms.png" />
-                <div class="w-[5.794rem] flex flex-col items-center justify-start box-border">
-                    <p class="m-0 self-stretch h-[1.613rem] leading-[180%] capitalize font-medium"> Reviewed on </p>
-                    <img class="w-[5.669rem] h-[1.613rem] mt-[-0.063rem]" loading="lazy" alt="" src="assets/images/main-cta/clutch.png" />
-                </div>
-                <div class="w-[7.669rem] overflow-hidden flex flex-col items-center justify-end pt-[0.312rem] text-[1.181rem]">
-                    <img class="w-[7.156rem] h-[1.325rem] " loading="lazy" alt="" src="assets/images/main-cta/reviews-40.svg" />
-
-                    <p class="m-0 mt-[0.562rem] pb-[0.012rem] capitalize font-medium whitespace-nowrap">
-                        40 Reviews
+                    <p class="mb-4 mt-0 inline-block shrink-0 leading-[2rem] tracking-[-0.01em] mq700:h-auto mq450:text-[1.188rem] mq450:leading-[1.625rem]">
+                        We were live and our platform was having difficulty supporting a
+                        simultaneous number of users. They saved the day with their solid
+                        grip on architecture level solutions.
                     </p>
-                </div>
+                    <div class="mt-[1.3rem] flex flex-row items-center justify-start gap-[1.5rem] text-gray-1000">
+                        <img class="h-[4.5rem] min-h-[4.5rem] w-[4.5rem] object-cover" loading="lazy" alt="" src="assets/images/main-cta/cta-avtar.png" />
+                        <div class="flex flex-col items-start justify-start">
+                            <h6 class="m-0 mb-3 text-[1.5rem] font-semibold tracking-[-0.01em] mq450:text-[1.188rem] mq450:leading-[2.188rem]">
+                                Reva McPollom
+                            </h6>
+                            <p class="my-0 text-[1.25rem] font-medium tracking-[-0.01em] mq450:text-[1rem] mq450:leading-[2.188rem]">
+                                Lessonbee Founder
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-[2.2rem] flex flex-row items-start justify-start gap-[0.668rem] mq900:mt-[1.875rem]">
+                        <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-mediumaquamarine"></span>
+                        <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-gray-700"></span>
+                        <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-gray-700"></span>
+                        <span class="h-[0.375rem] w-[2rem] rounded-[18.67px] bg-gray-700"></span>
+                    </div>
 
+                    <div class="mt-[3.75rem] box-border flex h-[3.438rem] max-w-full flex-row items-center justify-start gap-[1.562rem] pe-[1.5rem] font-mona-sans text-[0.75rem] mq900:mt-[1.875rem] mq700:h-auto mq700:min-w-full mq700:flex-wrap mq700:items-start">
+                        <img class="relative h-[2.956rem] w-[16.469rem] object-contain" loading="lazy" alt="" src="assets/images/main-cta/goodfirms.png" />
+                        <div class="box-border flex w-[5.794rem] flex-col items-center justify-start">
+                            <p class="m-0 h-[1.613rem] self-stretch font-medium capitalize leading-[180%]">
+                                Reviewed on
+                            </p>
+                            <img class="mt-[-0.063rem] h-[1.613rem] w-[5.669rem]" loading="lazy" alt="" src="assets/images/main-cta/clutch.png" />
+                        </div>
+                        <div class="flex w-[7.669rem] flex-col items-center justify-end overflow-hidden pt-[0.312rem] text-[1.181rem]">
+                            <img class="h-[1.325rem] w-[7.156rem]" loading="lazy" alt="" src="assets/images/main-cta/reviews-40.svg" />
+
+                            <p class="m-0 mt-[0.562rem] whitespace-nowrap pb-[0.012rem] font-medium capitalize">
+                                40 Reviews
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex w-[48.125rem] max-w-full flex-col items-start justify-start gap-[3rem] font-mona-sans text-[4.5rem] mq1725:flex-1 mq1325:min-w-full mq450:gap-[1.5rem]">
+                    <h3 class="font-inherit m-0 inline-block w-[38.188rem] max-w-full !bg-clip-text text-inherit font-semibold leading-[4.75rem] tracking-[-2.2px] text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background:linear-gradient(91.61deg,_#b5ffec,_#fff)] mq900:text-[3.625rem] mq900:leading-[3.813rem] mq450:text-[2.688rem] mq450:leading-[2.875rem]">
+                        Start growing your business with us
+                    </h3>
+                    <form class="m-0 box-border flex max-w-full flex-1 flex-col items-start justify-start gap-[1.5rem] self-stretch">
+                        <div class="flex max-w-full flex-row items-start justify-start gap-[1.5rem] self-stretch mq700:flex-wrap">
+                            <div class="box-border flex max-w-full flex-1 flex-row items-center justify-start rounded-[5.33px] border-b-[1.3px] border-solid border-gray-100 bg-gray-500 px-[1.312rem] pb-[1.187rem] pt-[1.312rem] mq700:min-w-full mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
+                                <input class="relative inline-block h-[1.125rem] w-full max-w-full flex-1 bg-[transparent] p-0 text-left font-mona-sans text-[1.169rem] font-light text-gray-100 [border:none] [outline:none]" placeholder="Full name*" type="text" />
+                            </div>
+                            <div class="box-border flex w-full max-w-full flex-1 flex-row items-center justify-start rounded-[5.33px] border-b-[1.3px] border-solid border-gray-100 bg-gray-500 px-[1.312rem] pb-[1.187rem] pt-[1.312rem] mq700:min-w-full mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
+                                <input class="relative inline-block h-[1.125rem] w-full bg-[transparent] p-0 text-left font-mona-sans text-[1.169rem] font-light text-gray-100 [border:none] [outline:none]" placeholder="Email*" type="email" />
+                            </div>
+                        </div>
+                        <div class="flex max-w-full flex-row items-start justify-start gap-[1.5rem] self-stretch mq700:flex-wrap">
+                            <div class="box-border flex w-full max-w-full flex-1 flex-row items-center justify-start rounded-[5.33px] border-b-[1.3px] border-solid border-gray-100 bg-gray-500 px-[1.312rem] pb-[1.187rem] pt-[1.312rem] mq700:min-w-full mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
+                                <input class="relative inline-block h-[1.125rem] w-full bg-[transparent] p-0 text-left font-mona-sans text-[1.169rem] font-light text-gray-100 [border:none] [outline:none]" placeholder="Full name*" type="text" />
+                            </div>
+                            <div class="box-border flex w-full max-w-full flex-1 flex-row items-center justify-start rounded-[5.33px] border-b-[1.3px] border-solid border-gray-100 bg-gray-500 px-[1.312rem] pb-[1.187rem] pt-[1.312rem] mq700:min-w-full mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
+                                <input class="relative inline-block h-[1.125rem] w-full bg-[transparent] p-0 text-left font-mona-sans text-[1.169rem] font-light text-gray-100 [border:none] [outline:none]" placeholder="Company" type="text" />
+                            </div>
+                        </div>
+                        <div class="box-border flex w-full max-w-full flex-1 flex-row items-center justify-start rounded-[5.33px] border-b-[1.3px] border-solid border-gray-100 bg-gray-500 px-[1.312rem] pb-[1.187rem] pt-[1.312rem] mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
+                            <textarea class="w-full bg-[transparent] p-0 text-left font-mona-sans text-[1.169rem] font-light text-gray-100 [border:none] [outline:none]" placeholder="Message" type="text"></textarea>
+                        </div>
+
+                        <div class="flex max-w-full flex-row items-center justify-start gap-[1rem] overflow-hidden mq450:gap-2">
+                            <input id="default-checkbox" type="checkbox" value="" class="custom-checkbox h-6 w-6 cursor-pointer rounded border-2 border-white bg-transparent text-transparent" />
+                            <label for="default-checkbox" class="w-[calc(100%-24px)] font-mona-sans text-[1.125rem] font-light text-gray-1100">
+                                Subscribe here to check updates from us
+                            </label>
+                        </div>
+                        <button class="ml-auto box-border flex w-[12.125rem] cursor-pointer flex-row items-center justify-center gap-[1.25rem] overflow-hidden rounded-lg bg-mediumaquamarine px-[2.75rem] pb-[1.062rem] pt-[1.125rem] font-mona-sans text-[15px] font-semibold uppercase leading-[1.313rem] text-black [border:none]">
+                            Submit
+                            <img class="h-[1rem] w-[1rem] pt-[0.156rem]" alt="" src="assets/images/main-cta/arrow-up-black.svg" />
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="w-[48.125rem] flex flex-col items-start justify-start gap-[3rem] max-w-full text-[4.5rem] font-mona-sans mq1325:min-w-full mq450:gap-[1.5rem] mq1725:flex-1">
-            <h3 class="m-0 w-[38.188rem] text-inherit tracking-[-2.2px] leading-[4.75rem] font-semibold font-inherit text-transparent !bg-clip-text [background:linear-gradient(91.61deg,_#b5ffec,_#fff)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] inline-block max-w-full mq450:text-[2.688rem] mq450:leading-[2.875rem] mq900:text-[3.625rem] mq900:leading-[3.813rem]">
-                Start growing your business with us
-            </h3>
-            <form class="self-stretch box-border m-0 flex-1 flex flex-col items-start justify-start gap-[1.5rem] max-w-full">
-                <div class="self-stretch flex flex-row items-start justify-start gap-[1.5rem] max-w-full mq700:flex-wrap">
-                    <div class="flex-1 mq700:min-w-full rounded-[5.33px] bg-gray-500 box-border flex flex-row items-center justify-start pt-[1.312rem] px-[1.312rem] pb-[1.187rem] max-w-full border-b-[1.3px] border-solid border-gray-100 mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
-                        <input class="w-full [border:none] [outline:none] font-light font-mona-sans text-[1.169rem] bg-[transparent] h-[1.125rem] flex-1 relative text-gray-100 text-left inline-block max-w-full p-0" placeholder="Full name*" type="text" />
-                    </div>
-                    <div class="flex-1 w-full mq700:min-w-full rounded-[5.33px] bg-gray-500 box-border flex flex-row items-center justify-start pt-[1.312rem] px-[1.312rem] pb-[1.187rem]  max-w-full border-b-[1.3px] border-solid border-gray-100 mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
-                        <input class="[border:none] [outline:none] font-light font-mona-sans text-[1.169rem] bg-[transparent] h-[1.125rem] relative text-gray-100 text-left inline-block p-0 w-full " placeholder="Email*" type="email" />
-                    </div>
-                </div>
-                <div class="self-stretch flex flex-row items-start justify-start gap-[1.5rem] max-w-full mq700:flex-wrap">
-                    <div class="flex-1 mq700:min-w-full rounded-[5.33px] bg-gray-500 box-border flex flex-row items-center justify-start pt-[1.312rem] px-[1.312rem] pb-[1.187rem] w-full max-w-full border-b-[1.3px] border-solid border-gray-100 mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem]">
-                        <input class="[border:none] [outline:none] font-light font-mona-sans text-[1.169rem] bg-[transparent] h-[1.125rem] relative text-gray-100 text-left inline-block p-0 w-full" placeholder="Full name*" type="text" />
-                    </div>
-                    <div class="flex-1 mq700:min-w-full rounded-[5.33px] bg-gray-500 box-border flex flex-row items-center justify-start pt-[1.312rem] mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem] px-[1.312rem] pb-[1.187rem] w-full max-w-full border-b-[1.3px] border-solid border-gray-100">
-                        <input class="w-full [border:none] [outline:none] font-light font-mona-sans text-[1.169rem] bg-[transparent] h-[1.125rem] relative text-gray-100 text-left inline-block p-0" placeholder="Company" type="text" />
-                    </div>
-                </div>
-                <div class="flex-1 w-full rounded-[5.33px] bg-gray-500 box-border flex flex-row items-center justify-start mq700:px-[1rem] mq700:pb-[1rem] mq700:pt-[1rem] pt-[1.312rem] px-[1.312rem] pb-[1.187rem] max-w-full border-b-[1.3px] border-solid border-gray-100">
-                    <textarea class="w-full [border:none] [outline:none] font-light font-mona-sans text-[1.169rem] bg-[transparent] text-gray-100 text-left p-0" placeholder="Message" type="text"></textarea>
-                </div>
-
-                <div class="overflow-hidden flex flex-row items-center justify-start mq450:gap-2 gap-[1rem] max-w-full">
-                    <input id="default-checkbox" type="checkbox" value="" class="custom-checkbox w-6 h-6 text-transparent bg-transparent border-2 border-white rounded cursor-pointer">
-                    <label for="default-checkbox" class="text-[1.125rem] font-light font-mona-sans text-gray-1100 w-[calc(100%-24px)]">
-                        Subscribe here to check updates from us
-                    </label>
-                </div>
-                <button class="ml-auto cursor-pointer [border:none] pt-[1.125rem] px-[2.75rem] pb-[1.062rem] bg-mediumaquamarine w-[12.125rem] rounded-lg overflow-hidden flex flex-row items-center justify-center gap-[1.25rem]  box-border leading-[1.313rem] uppercase font-semibold font-mona-sans text-black text-[15px]">
-                    Submit
-                    <img class="w-[1rem] h-[1rem] pt-[0.156rem]" alt="" src="assets/images/main-cta/arrow-up-black.svg" />
-                </button>
-            </form>
         </div>
     </section>
 
@@ -714,175 +686,192 @@
 
     <!-- Section Footer Start -->
 
-    <footer class="w-full bg-gray-300 overflow-hidden flex flex-col items-center justify-start pt-[7rem] px-[1.25rem] pb-[2.812rem] box-border gap-[3rem] mq900:gap-[1.5rem]">
-        <div class="w-[106.25rem] flex flex-row mq1325:w-full items-start justify-start gap-[7rem] max-w-full shrink-0 text-left text-[2rem] text-generic-white font-mona-sans mq1325:gap-[2rem] mq450:gap-[1.75rem] mq1325:flex-col">
-            <div class="w-[26.438rem] mq1325:min-w-full min-w-[20rem] flex flex-col items-start justify-start gap-[4.5rem] max-w-full mq900:min-w-full mq450:gap-[2.25rem] mq1650:flex-1">
-                <div class="self-stretch flex flex-col items-start justify-start gap-[2rem] max-w-full mq450:gap-[1rem]">
-                    <div class="self-stretch flex flex-col items-start justify-start">
-                        <div class="self-stretch flex flex-col items-start justify-start gap-[0.5rem]">
-                            <h3 class="m-0 relative text-inherit leading-[3.188rem] font-semibold font-inherit mq900:text-[1.625rem] mq900:leading-[2.563rem] mq450:text-[1.188rem] mq450:leading-[1.875rem]">
-                                <span>What’s new at </span>
-                                <span class="text-mediumaquamarine">Code District</span>
-                            </h3>
-                            <div class="self-stretch relative text-[1.25rem] leading-[1.75rem] font-medium text-gray-1000 mq450:text-[1rem] mq450:leading-[1.375rem]">
-                                Get the latest news about software development and Family Guy.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="self-stretch flex flex-row items-center justify-start py-[0rem] pe-[0.5rem] ps-[0rem] box-border mq700:max-w-full max-w-[30rem]">
-
-                        <input class="py-[0.875rem] px-[1.687rem] rounded-[4.32px] border-[1px] border-solid border-darkslategray-100 w-full [outline:none] pe-20 font-paragraph-medium-medium text-[1.081rem] bg-[transparent] h-[1.625rem] relative tracking-[-0.01em] leading-[1.619rem] text-gray-1000 " placeholder="Email" type="text" />
-
-                        <img class="h-[3.5rem] w-[3.75rem] relative overflow-hidden shrink-0 min-h-[3.5rem] z-[1] ml-[-4.25rem]" alt="" src="assets/images/footer/arrow-right.svg" />
-                    </div>
-                </div>
-                <div class="flex flex-row items-center justify-start gap-[0.893rem]">
-                    <a href="#">
-                        <img class="h-[2.675rem] w-[2.675rem] relative overflow-hidden shrink-0 min-h-[2.688rem]" loading="lazy" alt="" src="assets/images/footer/linkedin.svg" />
-                    </a>
-                    <a href="#">
-                        <img class="h-[2.675rem] w-[2.675rem] relative overflow-hidden shrink-0 min-h-[2.688rem]" loading="lazy" alt="" src="assets/images/footer/instagram.svg" />
-                    </a>
-                    <a href="#">
-                        <img class="h-[2.675rem] w-[2.675rem] relative overflow-hidden shrink-0 min-h-[2.688rem]" loading="lazy" alt="" src="assets/images/footer/github.svg" />
-                    </a>
-                    <a href="#">
-                        <img class="h-[2.563rem] w-[2.563rem] relative overflow-hidden shrink-0" loading="lazy" alt="" src="assets/images/footer/twitter.svg" />
-                    </a>
-                </div>
-            </div>
-            <div class="flex flex-col items-start justify-start box-border gap-[3rem] max-w-full text-[1.25rem] mq900:gap-[1.5rem] mq1300:min-w-full">
-                <div class="grid grid-cols-5 mq1650:grid-cols-3 mq700:grid-cols-2 mq450:grid-cols-1 items-start justify-between box-border gap-[3rem] max-w-full mq900:gap-[1.5rem] ">
-                    <div class="min-w-[7.456rem] flex flex-col items-start justify-start py-[0rem] px-[0rem] box-border gap-[0.5rem] shrink-0">
-                        <h6 class="my-0 text-xl self-stretch relative leading-[3.188rem] font-medium mq450:text-[1rem] mq450:leading-[2.563rem]">
-                            Company
-                        </h6>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            About us
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Services
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Work
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Blogs/insights
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Careers
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Contact us
-                        </a>
-                    </div>
-                    <div class="min-w-[14.419rem] flex flex-col items-start justify-start gap-[0.5rem] shrink-0">
-                        <h6 class="my-0 text-xl self-stretch relative leading-[3.188rem] font-medium mq450:text-[1rem] mq450:leading-[2.563rem]">
-                            Software Development
-                        </h6>
-
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Application Development
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Application Modernization
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Software Development
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Cloud Engineering
-                        </a>
-                    </div>
-                    <div class="min-w-[16.25rem] flex flex-col items-start justify-start gap-[0.5rem] shrink-0">
-                        <h6 class="my-0 text-xl self-stretch relative leading-[3.188rem] font-medium mq450:text-[1rem] mq450:leading-[2.563rem]">
-                            Expertise
-                        </h6>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Enterprise Mobility
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Business Process Automation
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Salesforce
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Microsoft SharePoint
-                        </a>
-                    </div>
-                    <div class="min-w-[9.625rem] flex flex-col items-start justify-start gap-[0.5rem]">
-                        <h6 class="my-0 text-xl self-stretch relative leading-[3.188rem] font-medium text-[inherit] mq450:text-[1rem] mq450:leading-[2.563rem]">
-                            Data & AI</h6>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Internet of Things
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            AR/VR
-                        </a>
-                        <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                            Data Science & AI
-                        </a>
-                    </div>
-                    <div class="min-w-[9.688rem] flex flex-col items-start justify-center gap-[2rem] ">
-                        <div class="self-stretch flex flex-col items-start justify-start gap-[0.5rem]">
-                            <h6 class="my-0 text-xl self-stretch relative leading-[3.188rem] font-medium mq450:text-[1rem] mq450:leading-[2.563rem]">
-                                Optimization
-                            </h6>
-                            <a class="w-[12.688rem] relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue inline-block no-underline" href="/">
-                                Quality Assurance & Testing
-                            </a>
-                        </div>
-                        <div class="w-[6.688rem] flex flex-col items-start justify-start gap-[0.5rem] text-[1.5rem]">
-                            <h6 class="m-0 leading-[3.188rem] text-5xl font-medium inline-block min-w-[6.688rem] mq450:text-[1.188rem] mq450:leading-[2.563rem]">
-                                Solutions </h6>
-                            <a class="self-stretch relative text-[1.125rem] leading-[2rem] font-medium text-aliceblue no-underline" href="/">
-                                Salesforce
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="box-border w-full flex flex-row items-start justify-start pt-[1.375rem] px-[0rem] pb-[1.5rem] max-w-full shrink-0 border-t-[1px] border-solid border-darkslategray-200 mq900:gap-[1.5rem]">
-                    <div class="flex flex-row items-start justify-start gap-[2rem] max-w-full mq900:flex-wrap mq900:gap-[1rem]">
-                        <div class="h-[7.25rem] w-[13.313rem] flex flex-col items-start justify-start gap-[0.581rem]">
-                            <div class="leading-[3.188rem] font-medium mq450:text-[1rem] mq450:leading-[2.563rem]">
-                                Headquarters
-                            </div>
-                            <div class="w-[16.188rem] flex flex-col items-start justify-start text-[1.125rem] text-gray-1000">
-                                <div class="self-stretch leading-[2rem] font-medium">
-                                    <p class="m-0">1300 I St NW, Suite 400E,</p>
-                                    <p class="m-0">Washington, DC</p>
+    <footer class="page-section w-full bg-gray-300">
+        <div class="thm-container">
+            <div class="flex w-[106.25rem] max-w-full shrink-0 flex-row items-start justify-start gap-[7rem] text-left font-mona-sans text-[2rem] text-generic-white mq1325:w-full mq1325:flex-col mq1325:gap-[2rem] mq450:gap-[1.75rem]">
+                <div class="flex w-[26.438rem] min-w-[20rem] max-w-full flex-col items-start justify-start gap-[4.5rem] mq1650:flex-1 mq1325:min-w-full mq900:min-w-full mq450:gap-[2.25rem]">
+                    <div class="flex max-w-full flex-col items-start justify-start gap-[2rem] self-stretch mq450:gap-[1rem]">
+                        <div class="flex flex-col items-start justify-start self-stretch">
+                            <div class="flex flex-col items-start justify-start gap-[0.5rem] self-stretch">
+                                <h3 class="font-inherit relative m-0 text-inherit font-semibold leading-[3.188rem] mq900:text-[1.625rem] mq900:leading-[2.563rem] mq450:text-[1.188rem] mq450:leading-[1.875rem]">
+                                    <span>What’s new at </span>
+                                    <span class="text-mediumaquamarine">Code District</span>
+                                </h3>
+                                <div class="text-[1.25rem] font-medium leading-[1.75rem] text-gray-1000">
+                                    Get the latest news about software development and Family
+                                    Guy.
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[12rem] flex flex-col items-start justify-start gap-[0.581rem]">
-                            <div class="leading-[3.188rem] font-medium min-w-[6.563rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
-                                Contact us </div>
-                            <div class="self-stretch flex flex-col items-start justify-start py-[0rem] px-[0rem] gap-[0.5rem] text-[1.125rem] text-gray-1000">
-                                <p class="m-0 leading-[2rem] font-medium whitespace-nowrap"> info@codedistrict.com </p>
-                                <p class="m-0 w-[18.581rem] leading-[2rem] font-medium">+1 (703) 782-3019 </p>
+                        <div class="box-border flex max-w-[30rem] flex-row items-center justify-start self-stretch py-[0rem] pe-[0.5rem] ps-[0rem] mq700:max-w-full">
+                            <input class="font-paragraph-medium-medium relative h-[1.625rem] w-full rounded-[4.32px] border-[1px] border-solid border-darkslategray-100 bg-[transparent] px-[1.687rem] py-[0.875rem] pe-20 text-[1.081rem] leading-[1.619rem] tracking-[-0.01em] text-gray-1000 [outline:none]" placeholder="Email" type="text" />
+
+                            <img class="relative z-[1] ml-[-4.25rem] h-[3.5rem] min-h-[3.5rem] w-[3.75rem] shrink-0 overflow-hidden" alt="" src="assets/images/footer/arrow-right.svg" />
+                        </div>
+                    </div>
+                    <div class="flex flex-row items-center justify-start gap-[0.893rem]">
+                        <a href="#">
+                            <img class="relative h-[2.675rem] min-h-[2.688rem] w-[2.675rem] shrink-0 overflow-hidden" loading="lazy" alt="" src="assets/images/footer/linkedin.svg" />
+                        </a>
+                        <a href="#">
+                            <img class="relative h-[2.675rem] min-h-[2.688rem] w-[2.675rem] shrink-0 overflow-hidden" loading="lazy" alt="" src="assets/images/footer/instagram.svg" />
+                        </a>
+                        <a href="#">
+                            <img class="relative h-[2.675rem] min-h-[2.688rem] w-[2.675rem] shrink-0 overflow-hidden" loading="lazy" alt="" src="assets/images/footer/github.svg" />
+                        </a>
+                        <a href="#">
+                            <img class="relative h-[2.563rem] w-[2.563rem] shrink-0 overflow-hidden" loading="lazy" alt="" src="assets/images/footer/twitter.svg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="box-border flex max-w-full flex-col items-start justify-start gap-[3rem] text-[1.25rem] mq1300:min-w-full mq900:gap-[1.5rem]">
+                    <div class="box-border grid max-w-full grid-cols-5 items-start justify-between gap-[3rem] mq1650:grid-cols-3 mq900:gap-[1.5rem] mq700:grid-cols-2 mq450:grid-cols-1">
+                        <div class="box-border flex min-w-[7.456rem] shrink-0 flex-col items-start justify-start gap-[0.5rem] px-[0rem] py-[0rem]">
+                            <h6 class="relative my-0 self-stretch text-xl font-medium leading-[3.188rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                Company
+                            </h6>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                About us
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Services
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Work
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Blogs/insights
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Careers
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Contact us
+                            </a>
+                        </div>
+                        <div class="flex min-w-[14.419rem] shrink-0 flex-col items-start justify-start gap-[0.5rem]">
+                            <h6 class="relative my-0 self-stretch text-xl font-medium leading-[3.188rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                Software Development
+                            </h6>
+
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Application Development
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Application Modernization
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Software Development
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Cloud Engineering
+                            </a>
+                        </div>
+                        <div class="flex min-w-[16.25rem] shrink-0 flex-col items-start justify-start gap-[0.5rem]">
+                            <h6 class="relative my-0 self-stretch text-xl font-medium leading-[3.188rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                Expertise
+                            </h6>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Enterprise Mobility
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Business Process Automation
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Salesforce
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Microsoft SharePoint
+                            </a>
+                        </div>
+                        <div class="flex min-w-[9.625rem] flex-col items-start justify-start gap-[0.5rem]">
+                            <h6 class="relative my-0 self-stretch text-xl font-medium leading-[3.188rem] text-[inherit] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                Data & AI
+                            </h6>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Internet of Things
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                AR/VR
+                            </a>
+                            <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                Data Science & AI
+                            </a>
+                        </div>
+                        <div class="flex min-w-[9.688rem] flex-col items-start justify-center gap-[2rem]">
+                            <div class="flex flex-col items-start justify-start gap-[0.5rem] self-stretch">
+                                <h6 class="relative my-0 self-stretch text-xl font-medium leading-[3.188rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                    Optimization
+                                </h6>
+                                <a class="relative inline-block w-[12.688rem] text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                    Quality Assurance & Testing
+                                </a>
+                            </div>
+                            <div class="flex w-[6.688rem] flex-col items-start justify-start gap-[0.5rem] text-[1.5rem]">
+                                <h6 class="m-0 inline-block min-w-[6.688rem] text-5xl font-medium leading-[3.188rem] mq450:text-[1.188rem] mq450:leading-[2.563rem]">
+                                    Solutions
+                                </h6>
+                                <a class="relative self-stretch text-[1.125rem] font-medium leading-[2rem] text-aliceblue no-underline" href="/">
+                                    Salesforce
+                                </a>
                             </div>
                         </div>
-                        <div class="max-w-full flex flex-col items-start justify-start gap-[0.581rem] text-[1.125rem] text-gray-1000">
-                            <div class="text-[1.25rem] leading-[3.188rem] font-medium text-generic-white min-w-[7.875rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
-                                Other Offices
+                    </div>
+                    <div class="box-border flex w-full max-w-full shrink-0 flex-row items-start justify-start border-t-[1px] border-solid border-darkslategray-200 px-[0rem] pb-[1.5rem] pt-[1.375rem] mq900:gap-[1.5rem]">
+                        <div class="flex max-w-full flex-row items-start justify-start gap-[2rem] mq900:flex-wrap mq900:gap-[1rem]">
+                            <div class="flex h-[7.25rem] w-[13.313rem] flex-col items-start justify-start gap-[0.581rem]">
+                                <div class="font-medium leading-[3.188rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                    Headquarters
+                                </div>
+                                <div class="flex w-[16.188rem] flex-col items-start justify-start text-[1.125rem] text-gray-1000">
+                                    <div class="self-stretch font-medium leading-[2rem]">
+                                        <p class="m-0">1300 I St NW, Suite 400E,</p>
+                                        <p class="m-0">Washington, DC</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flex flex-row items-start justify-start gap-[1rem] flex-wrap min-w-full">
-                                <span class="leading-[2rem] font-medium inline-block min-w-[6.5rem]"> Manchester </span>
-                                <span class="leading-[2rem] font-medium inline-block min-w-[4.625rem]"> Houston </span>
-                                <span class="leading-[2rem] font-medium inline-block min-w-[6.688rem]">
-                                    Netherlands</span>
-                                <span class="leading-[2rem] font-medium inline-block min-w-[4.375rem]"> Canada </span>
-                                <span class="leading-[2rem] font-medium inline-block min-w-[3.75rem]"> Lahore </span>
+                            <div class="flex w-[12rem] flex-col items-start justify-start gap-[0.581rem]">
+                                <div class="min-w-[6.563rem] font-medium leading-[3.188rem] mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                    Contact us
+                                </div>
+                                <div class="flex flex-col items-start justify-start gap-[0.5rem] self-stretch px-[0rem] py-[0rem] text-[1.125rem] text-gray-1000">
+                                    <p class="m-0 whitespace-nowrap font-medium leading-[2rem]">
+                                        info@codedistrict.com
+                                    </p>
+                                    <p class="m-0 w-[18.581rem] font-medium leading-[2rem]">
+                                        +1 (703) 782-3019
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex max-w-full flex-col items-start justify-start gap-[0.581rem] text-[1.125rem] text-gray-1000">
+                                <div class="min-w-[7.875rem] text-[1.25rem] font-medium leading-[3.188rem] text-generic-white mq450:text-[1rem] mq450:leading-[2.563rem]">
+                                    Other Offices
+                                </div>
+                                <div class="flex min-w-full flex-row flex-wrap items-start justify-start gap-[1rem]">
+                                    <span class="inline-block min-w-[6.5rem] font-medium leading-[2rem]">
+                                        Manchester
+                                    </span>
+                                    <span class="inline-block min-w-[4.625rem] font-medium leading-[2rem]">
+                                        Houston
+                                    </span>
+                                    <span class="inline-block min-w-[6.688rem] font-medium leading-[2rem]">
+                                        Netherlands</span>
+                                    <span class="inline-block min-w-[4.375rem] font-medium leading-[2rem]">
+                                        Canada
+                                    </span>
+                                    <span class="inline-block min-w-[3.75rem] font-medium leading-[2rem]">
+                                        Lahore
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <p class="border-t-[0.7px] border-solid border-darkslategray-100 pt-[2.812rem] text-center text-[1.331rem] tracking-[normal] text-gray-800 mq450:text-[1.063rem]">
+                All Rights Reserved. Code District.
+            </p>
         </div>
-        <p class="m-0 w-[106.25rem] max-w-full mq450:text-[1.063rem] border-t-[0.7px] border-solid border-darkslategray-100 pt-[2.812rem] leading-[normal] tracking-[normal] text-center text-[1.331rem] text-gray-800 font-paragraph-medium">
-            All Rights Reserved. Code District.</p>
     </footer>
 
     <!-- Section Footer End -->

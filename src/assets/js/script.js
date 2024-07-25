@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         engineering.addEventListener('DOMLoaded', function () {
             // Get the SVG element and set its width and height
-            var svgElement = document.querySelector('#engineering svg');
+            var svgElement = document.querySelector('#engineering svg');  
 
             if (svgElement) {
                 svgElement.setAttribute('width', '103px'); // Set desired width
@@ -17,9 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 svgElement.style.setProperty('transform', 'unset', 'important'); // Set transform: unset !important;
             }
         });
-        // console.log('Animation loaded successfully');
     } catch (error) {
-        // console.error('Error loading animation:', error);
     }
 });
 
@@ -34,5 +32,16 @@ $(document).ready(function () {
         } else {
             header.removeClass('scrolled');
         }
+    });
+});
+
+
+$(document).ready(function() {
+    $('.dropdown-toggle').click(function() {
+        $('.sub-menu-wrapper').toggleClass('active');
+    });
+    $('#mobileMenu, .mobile-nav-header .icon-close, .mob-nav-bg').click(function() {
+        $('.navigation-menu').toggleClass('active');
+        $('.mob-nav-bg').toggleClass('active');
     });
 });

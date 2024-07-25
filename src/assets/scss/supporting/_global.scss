@@ -9,6 +9,7 @@ body {
 ::before,
 ::after {
   border-width: 0;
+  box-sizing: border-box;
 }
 .page-section {
   @apply pb-14 pt-14;
