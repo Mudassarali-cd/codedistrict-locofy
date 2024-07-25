@@ -1780,7 +1780,7 @@ body{
 }
 .hero-video .callout{
   position: relative;
-  z-index: 10;
+  z-index: 11;
   margin: auto;
   display: flex;
   height: 100%;
@@ -1867,6 +1867,36 @@ body{
   padding: 0px;
 }
 
+.logo-black{
+  display: none;
+}
+
+.site-header-wrapper:hover, .site-header-wrapper.scrolled{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  box-shadow: 0 1px 10px #e0e0e0;
+}
+.site-header-wrapper:hover .site-header a, .site-header-wrapper.scrolled .site-header a{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.site-header-wrapper:hover .site-header a:hover, .site-header-wrapper.scrolled .site-header a:hover {
+  color: #30B795;
+}
+.site-header-wrapper:hover .logo-black, .site-header-wrapper.scrolled .logo-black{
+  display: block;
+}
+.site-header-wrapper:hover .logo-white, .site-header-wrapper.scrolled .logo-white{
+  display: none;
+}
+.site-header-wrapper:hover .btn-contactus, .site-header-wrapper.scrolled .btn-contactus{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .site-header{
   display: flex;
   align-items: center;
@@ -1891,20 +1921,17 @@ body{
   padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   border: 1px solid #30B795;
-  font-size: 14px;
 }
 .btn-contactus:hover{
   cursor: pointer;
   border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: #30B795 !important;
 }
 
 .btn-for-startups{
@@ -1978,9 +2005,8 @@ body{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.sub-menu-wrapper a:hover{
-  --tw-text-opacity: 1;
-  color: rgb(48 183 149 / var(--tw-text-opacity));
+.sub-menu-wrapper a:hover {
+  color: #30B795 !important;
 }
 
 .sub-menu-wrapper{

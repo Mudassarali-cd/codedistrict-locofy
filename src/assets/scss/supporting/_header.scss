@@ -8,6 +8,42 @@
     @apply border-none bg-transparent p-0;
 }
 
+.logo-black {
+    @apply hidden;
+}
+
+.site-header-wrapper {
+    &:hover, &.scrolled {
+        @apply bg-white transition-all;
+        box-shadow: 0 1px 10px #e0e0e0;
+
+        .site-header {
+            a {
+                @apply text-black;
+
+                &:hover {
+                    color: #30B795;
+                }
+            }
+        }
+
+        .logo-black {
+            @apply block;
+        }
+
+        .logo-white {
+            @apply hidden;
+        }
+
+        .btn-contactus {
+            @apply text-black;
+        }
+
+    }
+
+
+}
+
 .site-header {
     @apply flex justify-between items-center;
 
@@ -17,12 +53,12 @@
 }
 
 .btn-contactus {
-    @apply py-2 px-5 rounded-lg bg-transparent text-white;
+    @apply py-2 px-5 rounded-lg bg-transparent text-white text-[14px];
     border: 1px solid #30B795;
-    font-size: 14px;
 
     &:hover {
-        @apply cursor-pointer bg-white border border-white text-black;
+        @apply cursor-pointer bg-white border;
+        color: #30B795 !important;
     }
 }
 
@@ -57,7 +93,7 @@
         @apply font-mona-sans text-black text-base block py-2 font-semibold;
 
         &:hover {
-            @apply text-[#30B795];
+            color: #30B795 !important;
         }
     }
 }

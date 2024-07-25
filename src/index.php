@@ -14,11 +14,12 @@
 
   <!-- Header Start -->
 
-  <nav class="top-0 text-white z-50 site-header-wrapper">
+  <nav class="top-0 text-white z-50 site-header-wrapper" id="site-header">
     <div class="gap-6 site-header">
       <!-- Logo -->
       <a href="#" class="!p-0">
-        <img src="assets/images/cd-logo-white.svg" alt="logo" class="" />
+        <img src="assets/images/cd-logo-white.svg" alt="logo" class="logo-white" />
+        <img src="assets/images/cd-logo-black.svg" alt="logo" class="logo-black" />
       </a>
 
       <!-- Primary Navigation -->

@@ -11,6 +11,7 @@
 
     .video-container {
         @apply h-screen w-full relative overflow-hidden;
+        // h-[calc(100vh+75px)]
 
         @media (max-width: 725px) {
             @apply h-[550px];
@@ -47,7 +48,7 @@
     }
 
     .callout {
-        @apply relative flex justify-center flex-col h-full z-10 m-auto;
+        @apply relative flex justify-center flex-col h-full z-[11] m-auto;
 
         @media (max-width: 725px) {
             @apply w-[90%];

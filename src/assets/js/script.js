@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
             autoplay: true, // Optional
             path: './assets/lottieIcons/digital-consulting-advisory.json' // Correct relative path
         });
-        engineering.addEventListener('DOMLoaded', function() {
+        engineering.addEventListener('DOMLoaded', function () {
             // Get the SVG element and set its width and height
             var svgElement = document.querySelector('#engineering svg');
 
@@ -21,4 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
     } catch (error) {
         // console.error('Error loading animation:', error);
     }
+});
+
+
+$(document).ready(function () {
+    $(window).on('scroll', function () {
+        var scrollDistance = $(this).scrollTop();
+        var header = $('#site-header');
+
+        if (scrollDistance > 75) {
+            header.addClass('scrolled');
+        } else {
+            header.removeClass('scrolled');
+        }
+    });
 });
