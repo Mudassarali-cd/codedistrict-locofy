@@ -31,7 +31,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ## Running PHP Code with Gulp: Steps
 1. Open terminal and run the command php -S localhost:8000 -t <directory_path>
-Example: php -S localhost:8000 -t D:\xampp\htdocs\codedistrict\modified-locofy\dist
+Example: php -S localhost:8000 -t D:/xampp/htdocs/codedistrict/modified-locofy/dist
 
 
 2. Open another terminal in your directory path (e.g., D:\xampp\htdocs\uxshift\php) and run the command gulp or yarn run dev.

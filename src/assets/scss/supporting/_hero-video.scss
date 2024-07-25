@@ -1,0 +1,94 @@
+/* Hero Video */
+.outter.hero-video {
+    @apply w-full h-full flex flex-col justify-center relative;
+
+    @media (max-width: 725px) {
+        @apply h-[550px];
+    }
+}
+
+.hero-video {
+
+    .video-container {
+        @apply h-screen w-full relative overflow-hidden;
+        // h-[calc(100vh+75px)]
+
+        @media (max-width: 725px) {
+            @apply h-[550px];
+        }
+    }
+
+    video {
+        @apply object-cover absolute h-full w-full top-0 left-0;
+
+        @media (max-width: 725px) {
+            @apply h-[550px];
+        }
+    }
+
+    .video-container:after {
+        @apply block h-full w-full absolute top-0 left-0 bg-black bg-opacity-60 z-10;
+        content: '';
+    }
+
+    h1 {
+        @apply uppercase m-0 mb-4 p-0 leading-none text-white;
+
+        @media (max-width: 725px) {
+            @apply text-[2rem];
+        }
+
+        @media (min-width: 768px) {
+            @apply text-[3.25rem];
+        }
+    }
+
+    .desc {
+        @apply text-white font-normal text-lg;
+    }
+
+    .callout {
+        @apply relative flex justify-center flex-col h-full z-[11] m-auto;
+
+        @media (max-width: 725px) {
+            @apply w-[90%];
+        }
+    }
+}
+
+.progress-bar {
+    @apply absolute top-[-3px] left-0 w-full h-[2px];
+    background: rgba(255, 255, 255, 0.3);
+
+    .progress {
+        @apply h-full bg-[#30B795] w-0;
+    }
+}
+
+.tabs-items-wrapper {
+    @apply absolute w-[calc(100%-40px)] left-5 mt-0 bottom-2.5;
+}
+
+.tabs-item {
+    @apply flex items-center justify-center relative cursor-pointer opacity-60;
+
+    img {
+        @apply max-w-[130px] p-4;
+    }
+
+    &.active {
+        @apply opacity-100;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 725px) {
+    .tabs-item {
+        @apply hidden;
+        /* Hide all tabs by default */
+    }
+
+    .tabs-item.active {
+        @apply block w-full text-center;
+    }
+}

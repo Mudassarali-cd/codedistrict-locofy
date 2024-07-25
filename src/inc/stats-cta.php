@@ -32,10 +32,10 @@
 
 <body>
   <div
-    class="w-full bg-gray-300 ] overflow-hidden flex flex-row items-start justify-between pt-[198px] pb-[197px] pr-[117px] pl-[115px] box-border gap-[40px] text-53xl text-lightslategray font-mona-sans mq1700:pl-[57px] mq1700:pr-[58px] mq1700:box-border mq900:pl-7 mq900:pr-[29px] mq900:box-border mq1325:flex-wrap">
-    <div class="self-stretch mq1650:max-w-full max-w-[50.438rem] mq1325:min-w-full mq1325:flex-1">
+    class="w-full bg-gray-300 ] overflow-hidden flex flex-row items-start justify-between pt-[198px] pb-[197px] pr-[117px] pl-[115px] box-border gap-[40px] text-53xl text-lightslategray font-mona-sans 2xl:pl-[57px] 2xl:pr-[58px] 2xl:box-border mq900:pl-7 mq900:pr-[29px] mq900:box-border mq1325:flex-wrap">
+    <div class="self-stretch 2xl:max-w-full max-w-[50.438rem] mq1325:min-w-full mq1325:flex-1">
       <h3
-        class="mt-0 mb-[32px] mq1650:max-w-full mq450:mb-[16px] max-w-[46.188rem] text-inherit tracking-[-2.2px] leading-[76px] font-semibold font-inherit text-transparent !bg-clip-text [background:linear-gradient(91.61deg,_#b5ffec,_#fff)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mq450:text-24xl mq450:leading-[46px] mq900:text-39xl mq900:leading-[61px]">
+        class="mt-0 mb-[32px] 2xl:max-w-full mq450:mb-[16px] max-w-[46.188rem] text-inherit tracking-[-2.2px] leading-[76px] font-semibold font-inherit text-transparent !bg-clip-text [background:linear-gradient(91.61deg,_#b5ffec,_#fff)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] mq450:text-24xl mq450:leading-[46px] mq900:text-39xl mq900:leading-[61px]">
         We are growing fast so should you
       </h3>
       <p class="my-0 mb-[60px] mq900:mb-[30px] text-5xl leading-[32px] font-medium mq450:text-lgi mq450:leading-[1.625rem]">
