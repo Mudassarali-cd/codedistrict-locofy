@@ -47,7 +47,18 @@ body {
       @apply block pt-[58%];
     }
     .case-study-thumb {
-      @apply absolute top-0 w-full;
+      @apply absolute top-0 h-full w-full object-cover;
     }
+  }
+}
+
+.client-img {
+  @apply relative w-[664px];
+  &:before {
+    content: "";
+    @apply block pt-[56%];
+  }
+  img {
+    @apply absolute top-0 h-full w-full object-cover;
   }
 }

@@ -884,8 +884,8 @@
 .p-\[30px\]{
   padding: 30px;
 }
-.p-\[70px\]{
-  padding: 70px;
+.p-\[4\.375rem\]{
+  padding: 4.375rem;
 }
 .px-10{
   padding-left: 2.5rem;
@@ -1551,7 +1551,28 @@ body {
 .case-study-section .apect-ratio-thumb .case-study-thumb{
   position: absolute;
   top: 0px;
+  height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.client-img{
+  position: relative;
+  width: 664px;
+}
+.client-img:before {
+  content: "";
+  display: block;
+  padding-top: 56%;
+}
+.client-img img{
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 1725px){
   .mq1725\:flex-1{

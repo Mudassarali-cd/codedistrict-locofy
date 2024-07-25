@@ -92,13 +92,13 @@
 
     <!-- Section Case Studies Start -->
     <section
-      class="page-section case-study-section flex w-full gap-[48px] bg-black font-mona-sans text-21xl text-white mq700:box-border mq700:gap-[24px]">
+      class="page-section case-study-section flex w-full gap-[48px] overflow-hidden bg-black font-mona-sans text-21xl text-white mq700:box-border mq700:gap-[24px]">
       <div class="thm-container">
         <h2>Case studies</h2>
         <div
           class="grid grid-cols-2 gap-[32.2px] gap-y-[48px] self-stretch text-left text-xl mq1325:grid-cols-1 mq700:gap-[16px] mq700:gap-y-[16px]">
           <div
-            class="relative rounded-[8.37px] bg-[url('../images/case-studies/lsu.jpg')] bg-cover bg-[top] bg-no-repeat mq950:min-w-full">
+            class="relative overflow-hidden rounded-[8.37px] bg-[url('../images/case-studies/lsu.jpg')] bg-cover bg-[top] bg-no-repeat mq950:min-w-full">
             <div class="apect-ratio-thumb">
               <img
                 class="case-study-thumb w-[837px] self-stretch object-cover"
@@ -106,7 +106,7 @@
                 src="assets/images/case-studies/lsu.jpg" />
             </div>
             <div
-              class="absolute bottom-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3 mq700:pt-[232px]">
+              class="absolute bottom-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border">
               <img
                 class="relative z-[2] h-[23px] object-contain"
                 loading="lazy"
@@ -128,7 +128,7 @@
                 src="assets/images/case-studies/stc-pay.jpg" />
             </div>
             <div
-              class="absolute bottom-0 left-0 z-[1] box-border flex max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3 mq700:pt-[232px]">
+              class="absolute bottom-0 left-0 z-[1] box-border flex max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3">
               <img
                 class="relative z-[2] h-[23px] object-contain"
                 loading="lazy"
@@ -150,7 +150,7 @@
                 src="assets/images/case-studies/family-dollar.jpg" />
             </div>
             <div
-              class="absolute bottom-0 left-0 z-[1] box-border flex max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 pt-[357.6px] [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3 mq700:pt-[232px]">
+              class="absolute bottom-0 left-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[16.7px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3">
               <img
                 class="relative z-[2] h-[23px] object-contain"
                 loading="lazy"
@@ -172,7 +172,7 @@
                 src="assets/images/case-studies/caribbean-airlines.jpg" />
             </div>
             <div
-              class="absolute bottom-0 left-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[14px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3 mq700:pt-[232px]">
+              class="absolute bottom-0 left-0 z-[1] box-border flex w-full max-w-full flex-1 shrink-0 flex-col items-start justify-end gap-[14px] overflow-hidden pb-[27.7px] pe-5 ps-8 [background:linear-gradient(-0.46deg,_#000,_rgba(102,_102,_102,_0))] mq1325:pe-3 mq1325:ps-3 mq700:box-border mq700:pb-3">
               <img
                 class="relative z-[2] object-contain"
                 loading="lazy"
@@ -201,11 +201,12 @@
 
     <!-- Section Testimonials Start -->
 
-    <section class="page-section py-14 font-mona-sans text-21xl text-black">
+    <section
+      class="page-section overflow-hidden font-mona-sans text-21xl text-black">
       <div class="thm-container">
         <h2>What our clients say</h2>
         <div
-          class="rounded-3xl border-[1px] border-solid border-gainsboro bg-whitesmoke p-[70px] font-mona-sans text-13xl text-black mq1350:pe-6 mq1350:ps-6 mq925:pb-7 mq925:pt-7">
+          class="rounded-3xl border-[1px] border-solid border-gainsboro bg-whitesmoke p-[4.375rem] font-mona-sans text-13xl text-black mq1350:pe-6 mq1350:ps-6 mq925:pb-7 mq925:pt-7">
           <div
             class="flex flex-row items-start justify-between gap-[20px] pe-1 ps-0 mq1325:flex-wrap">
             <div
@@ -244,11 +245,13 @@
                   src="assets/images/arrow-1@2x.png" />
               </div>
             </div>
-            <img
-              class="flex h-[377px] max-h-full w-[664px] max-w-full justify-start overflow-hidden rounded-xl object-cover mq1325:min-w-full mq1325:flex-1"
-              loading="lazy"
-              alt=""
-              src="assets/images/testimonials/testimonials-overly.jpg" />
+            <div class="client-img">
+              <img
+                class="flex max-h-full max-w-full justify-start overflow-hidden rounded-xl object-cover mq1325:min-w-full mq1325:flex-1"
+                loading="lazy"
+                alt=""
+                src="assets/images/testimonials/testimonials-overly.jpg" />
+            </div>
           </div>
         </div>
       </div>
@@ -258,10 +261,10 @@
 
     <!-- Section Stats CTA Start -->
 
-    <section class="w-full bg-gray-300 pb-[197px] pt-[198px]">
+    <section class="w-full overflow-hidden bg-gray-300 pb-[197px] pt-[198px]">
       <div class="thm-container">
         <div
-          class="box-border flex flex-row items-start justify-between gap-[40px] font-mona-sans text-53xl text-lightslategray mq1700:box-border mq1700:pe-[58px] mq1700:ps-[57px] mq1325:flex-wrap mq900:box-border mq900:pe-[29px]">
+          class="box-border flex flex-row items-start justify-between gap-[40px] font-mona-sans text-53xl text-lightslategray mq1700:box-border mq1325:flex-wrap">
           <div
             class="max-w-[50.438rem] self-stretch mq1650:max-w-full mq1325:min-w-full mq1325:flex-1">
             <h3
@@ -386,7 +389,7 @@
     <!-- Section Blog Start -->
 
     <section
-      class="page-section w-full gap-[48px] overflow-hidden bg-white pb-[53.2px] pe-0 pt-14 font-mona-sans text-21xl text-black mq975:box-border mq975:ps-14 mq700:box-border mq700:gap-[24px] mq700:ps-7">
+      class="page-section w-full gap-[48px] overflow-hidden bg-white pb-[53.2px] pe-0 pt-14 font-mona-sans text-21xl text-black mq975:box-border mq700:box-border mq700:gap-[24px]">
       <div class="thm-container">
         <h2>Insights</h2>
 
@@ -400,16 +403,6 @@
               class="w-full" />
             <div
               class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
-              <div class="flex flex-row items-center gap-[8px]">
-                <span
-                  class="flex flex-row items-center justify-start whitespace-nowrap rounded-21xl bg-gray-400 py-[6px] pe-[11px] ps-3 font-semibold uppercase leading-[16px] tracking-[-0.13px]">
-                  News & Articles
-                </span>
-                <span
-                  class="inline-block min-w-[67.1px] leading-[18.2px] text-gray-400">
-                  23.05.2024
-                </span>
-              </div>
               <h4
                 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
                 CD Shines at the Trident Club's Monthly Showcase Meetup
@@ -434,16 +427,6 @@
               alt="blog-placeholder" />
             <div
               class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
-              <div class="flex flex-row items-center gap-[8px]">
-                <span
-                  class="flex flex-row items-center justify-start whitespace-nowrap rounded-21xl bg-gray-400 py-[6px] pe-[11px] ps-3 font-semibold uppercase leading-[16px] tracking-[-0.13px]">
-                  News & Articles
-                </span>
-                <span
-                  class="inline-block min-w-[67.1px] leading-[18.2px] text-gray-400">
-                  23.05.2024
-                </span>
-              </div>
               <h4
                 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
                 CD Shines at the Trident Club's Monthly Showcase Meetup
@@ -468,16 +451,6 @@
               alt="blog-placeholder" />
             <div
               class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
-              <div class="flex flex-row items-center gap-[8px]">
-                <span
-                  class="flex flex-row items-center justify-start whitespace-nowrap rounded-21xl bg-gray-400 py-[6px] pe-[11px] ps-3 font-semibold uppercase leading-[16px] tracking-[-0.13px]">
-                  News & Articles
-                </span>
-                <span
-                  class="inline-block min-w-[67.1px] leading-[18.2px] text-gray-400">
-                  23.05.2024
-                </span>
-              </div>
               <h4
                 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
                 CD Shines at the Trident Club's Monthly Showcase Meetup
@@ -502,16 +475,6 @@
               alt="blog-placeholder" />
             <div
               class="flex max-w-full shrink-0 flex-col items-start justify-start gap-[15.8px] self-stretch">
-              <div class="flex flex-row items-center gap-[8px]">
-                <span
-                  class="flex flex-row items-center justify-start whitespace-nowrap rounded-21xl bg-gray-400 py-[6px] pe-[11px] ps-3 font-semibold uppercase leading-[16px] tracking-[-0.13px]">
-                  News & Articles
-                </span>
-                <span
-                  class="inline-block min-w-[67.1px] leading-[18.2px] text-gray-400">
-                  23.05.2024
-                </span>
-              </div>
               <h4
                 class="m-0 max-w-full flex-1 pb-[38px] pe-1.5 text-5xl font-bold leading-[38.4px] tracking-[-0.64px] text-black mq450:text-base mq450:leading-[31px]">
                 CD Shines at the Trident Club's Monthly Showcase Meetup
