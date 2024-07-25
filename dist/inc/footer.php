@@ -26,7 +26,7 @@
     <div
       class="w-[106.25rem] flex flex-row mq1325:w-full items-start justify-start gap-[7rem] max-w-full shrink-0 text-left text-[2rem] text-generic-white font-mona-sans mq1325:gap-[2rem] mq450:gap-[1.75rem] mq1325:flex-col">
       <div
-        class="w-[26.438rem] mq1325:min-w-full min-w-[20rem] flex flex-col items-start justify-start gap-[4.5rem] max-w-full mq900:min-w-full mq450:gap-[2.25rem] mq1650:flex-1">
+        class="w-[26.438rem] mq1325:min-w-full min-w-[20rem] flex flex-col items-start justify-start gap-[4.5rem] max-w-full mq900:min-w-full mq450:gap-[2.25rem] 2xl:flex-1">
         <div class="self-stretch flex flex-col items-start justify-start gap-[2rem] max-w-full mq450:gap-[1rem]">
           <div class="self-stretch flex flex-col items-start justify-start">
             <div class="self-stretch flex flex-col items-start justify-start gap-[0.5rem]">
@@ -74,7 +74,7 @@
       <div
         class="flex flex-col items-start justify-start box-border gap-[3rem] max-w-full text-[1.25rem] mq900:gap-[1.5rem] mq1300:min-w-full">
         <div
-          class="grid grid-cols-5 mq1650:grid-cols-3 mq700:grid-cols-2 mq450:grid-cols-1 items-start justify-between box-border gap-[3rem] max-w-full mq900:gap-[1.5rem] ">
+          class="grid grid-cols-5 2xl:grid-cols-3 mq700:grid-cols-2 mq450:grid-cols-1 items-start justify-between box-border gap-[3rem] max-w-full mq900:gap-[1.5rem] ">
           <div class="min-w-[7.456rem] flex flex-col items-start justify-start py-[0rem] px-[0rem] box-border gap-[0.5rem] shrink-0">
             <h6
               class="my-0 text-xl self-stretch relative leading-[3.188rem] font-medium mq450:text-[1rem] mq450:leading-[2.563rem]">

@@ -68,6 +68,7 @@ function devScripts() {
     `${options.paths.src.assetsJs}/jquery-plugins/jquery.min.js`, // Include jQuery file
     `${options.paths.src.assetsJs}/jquery-plugins/jquery.validate.min.js`, // Include jQuery validate file
     `${options.paths.src.assetsJs}/jquery-plugins/lottie.min.js`, // Include lottie icons animation file
+    `${options.paths.src.assetsJs}/swiper-bundle.min.js`,
     // `${options.paths.src.assetsJs}/jquery-plugins/image-comparison-slider.min.js`, // Include jQuery any image comparison slider file
     // `${options.paths.src.assetsJs}/jquery-plugins/swiper-bundle.min.js`, // Include jQuery swiper slider file
     // `${options.paths.src.assetsJs}/jquery-plugins/gsap.js`, // Include jQuery gsap file

@@ -29,9 +29,9 @@
         class="m-0 text-[2.5rem] tracking-[-1.4px] leading-[5.688rem] font-semibold font-mona-sans text-black max-w-full mq450:text-[1.5rem] mq450:leading-[3.438rem] mq825:text-[2rem] mq825:leading-[4.563rem]">
         You don’t get too many of these for nothing</h3>
       <div
-        class="box-border max-w-full mq450:gap-[1rem] mq825:gap-[2rem] overflow-hidden pe-[3.375rem] ps-[3.312rem] [background:linear-gradient(90deg,_#fff,_rgba(239,_239,_239,_0)_50.5%,_#fff)] border-[1px] border-solid border-lightgray self-stretch rounded-xl pt-[1.562rem] pb-[1.625rem] mq1425:pl-[1.625rem] mq1425:pr-[1.688rem] mq1425:box-border">
+        class="box-border max-w-full mq450:gap-[1rem] mq825:gap-[2rem] overflow-hidden pe-[3.375rem] ps-[3.312rem] [background:linear-gradient(90deg,_#fff,_rgba(239,_239,_239,_0)_50.5%,_#fff)] border-[1px] border-solid border-lightgray self-stretch rounded-xl pt-[1.562rem] pb-[1.625rem] 2xl:pl-[1.625rem] 2xl:pr-[1.688rem] 2xl:box-border">
 
-        <div class="flex flex-row items-center justify-center gap-[.7rem] mq1425:flex-wrap">
+        <div class="flex flex-row items-center justify-center gap-[.7rem] 2xl:flex-wrap">
           <img class="px-[0.937rem] pb-[0.262rem] h-[7.806rem] max-w-full" loading="lazy" alt=""
             src="assets/images/awards/clutch-web-developers.png" />
           <img class="px-[0.937rem] pb-[0.262rem] h-[6.269rem] max-w-full" loading="lazy" alt=""

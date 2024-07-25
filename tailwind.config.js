@@ -83,9 +83,6 @@ module.exports = {
       inherit: "inherit",
     },
     screens: {
-      mq1850: {
-        raw: "screen and (max-width: 1850px)",
-      },
       mq1725: {
         raw: "screen and (max-width: 1725px)",
       },
@@ -134,6 +131,18 @@ module.exports = {
       mq450: {
         raw: "screen and (max-width: 450px)",
       },
+      min900: {
+        raw: "screen and (min-width: 900px)",
+      },
+      mq899: {
+        raw: "screen and (max-width: 899px)",
+      },
+      mq1200: {
+        raw: "screen and (min-width: 1200px)",
+      },
+      md: "768px",
+      lg: "1024px",
+      "2xl": "1536px",
     },
   },
   corePlugins: {

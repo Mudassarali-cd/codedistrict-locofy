@@ -54,12 +54,60 @@ body {
 }
 
 .client-img {
-  @apply relative w-[664px];
+  @apply relative w-full lg:max-w-[664px];
   &:before {
     content: "";
     @apply block pt-[56%];
   }
   img {
     @apply absolute top-0 h-full w-full object-cover;
+  }
+}
+
+.case-study-box {
+  .case-study-thumb {
+    transition: all ease-in-out 0.5s;
+  }
+  .footer-wrap {
+    @apply mb-[-65px] flex w-full justify-between overflow-hidden opacity-0;
+    transition: all ease-in-out 0.5s;
+    .text {
+      @apply m-0 flex items-center gap-2;
+      p {
+        @apply m-0 max-w-[93px] text-[12px] font-light;
+      }
+    }
+    .view-testimonial {
+      @apply flex min-w-[196px] cursor-pointer items-center justify-center gap-3 rounded-full border border-solid border-white bg-transparent text-[12px] uppercase text-white;
+    }
+    .btn-right {
+      @apply h-12 w-12 cursor-pointer rounded-full border border-solid border-white bg-transparent;
+    }
+  }
+  &:hover {
+    .case-study-thumb {
+      @apply scale-[1.1];
+    }
+    .footer-wrap {
+      @apply mb-[0] opacity-[1];
+    }
+  }
+}
+
+.business-card {
+  @apply overflow-visible #{!important};
+}
+
+.insight-card {
+  .swiper-slide {
+    img {
+      @apply mb-6;
+    }
+  }
+}
+
+.logo-wrapper {
+  img {
+    @apply h-[114px] w-auto #{!important};
   }
 }
